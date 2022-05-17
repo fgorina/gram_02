@@ -1,0 +1,304 @@
+/*
+  Localizable.strings
+  GRAM_01
+
+  Created by Francisco Gorina Vanrell on 20/10/197.
+  Copyright © 2017 Paco Gorina. All rights reserved.
+*/
+
+/* AskTaraViewConViewController.swift "Enter Tare Name"*/
+"Enter Tare Name" = "Enter Tare Name";
+/* GRAMModel.swift "User"*/
+"User" = "User";
+/*GRAMModel.swift "Customer"*/
+"Customer" = "Customer";
+/*GRAMModel.swift "Number"*/
+"Number" = "Number";
+/*GRAMModel.swift "Date"*/
+"Date" = "Date";
+/*GRAMModel.swift "Time"*/
+"Time" = "Time";
+/*GRAMModel.swift "Item"*/
+"Item" = "Item";
+/*GRAMModel.swift "Net Weight"*/
+"Net Weight" = "Net Weight";
+/*GRAMModel.swift "Tare"*/
+"Tare" = "Tare";
+/*GRAMModel.swift "Gross Weight"*/
+"Gross Weight" = "Gross Weight";
+/*GRAMModel.swift "No Error"*/
+"No Error" = "No Error";
+/*GRAMModel.swift "Error 01"*/
+"Error 01" = "Error 01";
+/*GRAMModel.swift "Error 02"*/
+"Error 02" = "Error 02";
+/*GRAMModel.swift "Error 03"*/
+"Error 03" = "Error 03";
+/*GRAMModel.swift "ADC H"*/
+"ADC H" = "ADC H";
+/*GRAMModel.swift "ADC L"*/
+"ADC L" = "ADC L";
+/*GRAMModel.swift "Error 06"*/
+"Error 06" = "Error 06";
+/*GRAMModel.swift "Overload"*/
+"Overload" = "Overload";
+/*GRAMModel.swift "--------"*/
+"--------" = "--------";
+/*GRAMModel.swift "<User>"*/
+"<User>" = "<User>";
+/*GRAMModel.swift "<Customer>"*/
+"<Customer>" = "<Customer>";
+/*GRAMModel.swift  "<Code>"*/
+"<Code>" = "<Code>";
+
+/* NetworkViewController.swift  "Changing Network Name" */
+"Changing Network Name" = "Changing Network Name";
+/*NetworkViewController.swift  "Network will disconnect and scale will reboot. Define a new Scale in settings."*/
+"Network will disconnect and scale will reboot. Define a new Scale in settings." = "Network will disconnect and scale will reboot. Define a new Scale in settings.";
+
+
+/*NetworkViewController.swift  "Yes"*/
+"Yes" = "Yes";
+/*NetworkViewController.swift  "No"*/
+"No" = "No";
+/* NetworkViewController.swift  "Error changing password" */
+"Error changing password" = "Error changing password";
+/*NetworkViewController.swift   "Please verify that the two passwords are equal!!!"*/
+ "Please verify that the two passwords are equal!!!" =  "Please verify that the two passwords are equal!!!";
+
+/* NetworkViewController.swift  "Changing Network Password" */
+"Changing Network Password" = "Changing Network Password";
+
+/*Protocol/GRAMMessage.swift  "Protected by Sealing Switch"*/
+"Protected by Sealing Switch" = "Protected by Sealing Switch";
+/*Protocol/GRAMMessage.swift  "Read Only Record"*/
+"Read Only Record" = "Read Only Record";
+/*Protocol/GRAMMessage.swift  "Incorrect value / Out of range"*/
+"Incorrect value / Out of range" = "Incorrect value / Out of range";
+/*Protocol/GRAMMessage.swift  "Unknown error value"*/
+"Unknown error value" = "Unknown error value";
+/*Protocol/GRAMMessage.swift "Protected by Sealing Switch"*/
+"Protected by Sealing Switch" = "Protected by Sealing Switch";
+/*Protocol/GRAMMessage.swift "Error \(dataSent[0])"*/
+"Error \(dataSent[0])" = "Error \(dataSent[0])";
+
+/*RecordedWeightsViewController.swift "Deleting records"*/
+"Deleting records" = "Deleting records";
+/*RecordedWeightsViewController.swift "Are you sure you want to delete ALL records?"*/
+"Are you sure you want to delete ALL records?" = "Are you sure you want to delete ALL records?";
+/*RecordedWeightsViewController.swift "Error \(error) while trying to delete \(url)"*/
+"Error \(error) while trying to delete \(url)" = "Error \(error) while trying to delete \(url)";
+/*RecordedWeightsViewController.swift "Error while writing to file"*/
+"Error while writing to file" = "Error while writing to file";
+/*
+ScaleDatabase.swift "Encoding Error, invalid value"*/
+"Encoding Error, invalid value" = "Encoding Error, invalid value";
+/*ScaleDatabase.swift "Error al escriure la scale database \(error)"*/
+"Error al escriure la scale database \(error)" = "Error al escriure la scale database \(error)";
+/*ScaleDatabase.swift "Error when loading scal data \(error)"*/
+"Error when loading scal data \(error)" = "Error when loading scal data \(error)";
+/*ScaleDatabase.swift "Scale \(name) already exists in the daabase"*/
+"Scale \(name) already exists in the daabase" = "Scale \(name) already exists in the daabase";
+/*ScaleDatabase.swift "Scale \(name) has same address as another obe"*/
+"Scale \(name) has same address as another obe" = "Scale \(name) has same address as another obe";
+/*ScaleDatabase.swift "Scale \(scale.name) already exists in the daabase"*/
+"Scale \(scale.name) already exists in the daabase" = "Scale \(scale.name) already exists in the daabase";
+/*
+ScaleDatabaseViewController.swift "Error, path inexistent"*/
+"Error, path inexistent" = "Error, path inexistent";
+/*
+ScannerViewController.swift "Scanning not supported"*/
+"Scanning not supported" = "Scanning not supported";
+/*ScannerViewController.swift "Your device does not support scanning a code from an item. Please use a device with a camera."*/
+"Your device does not support scanning a code from an item. Please use a device with a camera." = "Your device does not support scanning a code from an item. Please use a device with a camera.";
+/*ScannerViewController.swift "OK"*/
+"OK" = "OK";
+/*ScannerViewController.swift "Waiting for code"*/
+"Waiting for code" = "Waiting for code";
+/*ScannerViewController.swift "Enter Code"*/
+"Enter Code" = "Enter Code";
+/*ScannerViewController.swift "Cancel"*/
+"Cancel" = "Cancel";
+/*
+SetupViewController.swift "Switching Auto tare to \(s.isOn)"*/
+"Switching Auto tare to \(s.isOn)" = "Switching Auto tare to \(s.isOn)";
+/*SetupViewController.swift "Switching Tare On Stability to \(s.isOn)"*/
+"Switching Tare On Stability to \(s.isOn)" = "Switching Tare On Stability to \(s.isOn)";
+/*SetupViewController.swift "Switching Zero tracking Device to \(s.isOn)"*/
+"Switching Zero tracking Device to \(s.isOn)" = "Switching Zero tracking Device to \(s.isOn)";
+/*SetupViewController.swift "ZeroTrackingRange \(s.selectedSegmentIndex)"*/
+"ZeroTrackingRange \(s.selectedSegmentIndex)" = "ZeroTrackingRange \(s.selectedSegmentIndex)";
+/*SetupViewController.swift "Switching Livestock Filter  to \(s.isOn)"*/
+"Switching Livestock Filter  to \(s.isOn)" = "Switching Livestock Filter  to \(s.isOn)";
+/*SetupViewController.swift "Switching Livestock Filter  to \(s.isOn)"*/
+"Switching Livestock Filter  to \(s.isOn)" = "Switching Livestock Filter  to \(s.isOn)";
+/*
+SetupViewController.swift "Enter SSID"*/
+"Enter SSID" = "Enter SSID";
+/*SetupViewController.swift "Enter Password"*/
+"Enter Password" = "Enter Password";
+/*SetupViewController.swift "NetworkViewController.doChangePassword"*/
+"NetworkViewController.doChangePassword" = "NetworkViewController.doChangePassword";
+/*SetupViewController.swift "Change Passwd Message"*/
+"Change Passwd Message" = "Change Passwd Message";
+/*SetupViewController.swift "SetupkViewController.doChangeSSID"*/
+"SetupkViewController.doChangeSSID" = "SetupkViewController.doChangeSSID";
+/*SetupViewController.swift "Change SSID Message"*/
+"Change SSID Message" = "Change SSID Message";
+/*SetupViewController.swift "Cancel"*/
+"Cancel" = "Cancel";
+/*SetupViewController.swift "Update SSID"*/
+"Update SSID" = "Update SSID";
+/*SetupViewController.swift "Cancel"*/
+"Cancel" = "Cancel";
+/*SetupViewController.swift "Update Password"*/
+"Update Password" = "Update Password";
+/*ViewController.swift "+"*/
+"+" = "+";
+/*ViewController.swift "HR"*/
+"HR" = "HR";
+/*ViewController.swift "Limits"*/
+"Limits" = "Limits";
+/*ViewController.swift "Hold"*/
+"Hold" = "Hold";
+/*ViewController.swift "→T←"*/
+"→T←" = "→T←";
+/*ViewController.swift "→0←"*/
+"→0←" = "→0←";
+/*ViewController.swift ""*/
+"" = "";
+/*ViewController.swift "Scanning not supported"*/
+"Scanning not supported" = "Scanning not supported";
+/*ViewController.swift "Your device does not support scanning a code from an item. Please use a device with a camera."*/
+"Your device does not support scanning a code from an item. Please use a device with a camera." = "Your device does not support scanning a code from an item. Please use a device with a camera.";
+/*ViewController.swift "Enter User"*/
+"Enter User" = "Enter User";
+/*ViewController.swift "Enter Customer"*/
+"Enter Customer" = "Enter Customer";
+/*ViewController.swift "Enter Code"*/
+"Enter Code" = "Enter Code";
+/*ViewController.swift "showLogsSegue"*/
+"showLogsSegue" = "showLogsSegue";
+/*ViewController.swift "Scanner not implemented"*/
+"Scanner not implemented" = "Scanner not implemented";
+"Please, contact your dealer." = "Please, contact your dealer.";
+"Export not implemented" = "Export not implemented";
+
+/* Added fields from Storyboard */
+"Clear" = "Clear";
+"Export" = "Export";
+"Columns" = "Columns";
+"Gross W" = "Gross W";
+"Displayed Fields" = "Displayed Fields";
+"Zero Tracking device" = "Zero Tracking device";
+"Zero Tracking Rng" = "Zero Tracking Rng";
+"Records no 0" = "Records no 0";
+"Settings" = "Settings";
+"Name" = "Name";
+"Passphrase" = "Passphrase";
+"IP Address" = "IP Address";
+"Port" = "Port";
+"Network SSID" = "SSID Network";
+
+/* More fields for printer */
+"Label" = "Label";
+"Connected" = "Connected";
+"Scanning" = "Scanning";
+"Connect to Printer" = "Connect to Printer";
+"Enter Scale Name" = "Enter Scale Name";
+"Enter Network Name" = "Enter Network Name";
+"Enter Network Password" = "Enter Network Password"
+"Enter Network IP" = "Enter Network IP";
+"Net SSID" = "Net SSID";
+"Net DHCP" = "Net DHCP;
+"Net IP" = "Net IP";
+
+"Import Label" = "Import Label";
+"Permission was not granted" = "Permission was not granted";
+"Import Label " = "Import Label ";
+"Select Label" = "SSelect Label";
+"Users" = "Users";
+"Customers = "Customers";
+"Products" = "Products";
+"Refresh" = "Refresh";
+"Printer Name" = "Printer name";
+"Protocol" = "Protocol";
+"Current Label" = "Current Label";
+"Configure" = "Configure";
+"Disconnected" = "Disconnected";
+"Connecting" = "Connecting";
+"Disconnecting" = "Disconnecting";
+"Looking for services" = "Looking for services";
+"Checking device type" = "Checking device type";
+
+/* Settings : Titles */
+
+"General" = "General";
+"Zero Options" = "Zero Options";
+"Tare Options" = "Tare Options";
+"Filter Options" = "Filter Options";
+"COM port" = "COM port";
+"Scale Definition" = "Scale Definition";
+"Printer" = "Printer";
+"Databases" = "Databases";
+"About App" = "About App";
+
+/* Settings : General  */
+
+"Name" = "Name";
+"Serial Number" = "Serial Number";
+"Device Id" = "Device Id";
+"Type" = "Type";
+"Software Version" = "Software Version";
+"Optional Board" = "Optional Board";
+"Sealing Switch" = "Sealing Switch";
+
+/* Settings : Zero Options  */
+"Initial Zero Setting" = "Initial Zero Setting";
+"Initial Zero Range" = "Initial Zero Range";
+"Zero Tracking Device" = "Zero Tracking Device";
+"Zero Tracking Range" = "Zero Tracking Range";
+
+/* Settings : Tare Options  */
+
+"Auto Tare" = "Auto Tare";
+"Tare when stable" = "Tare when stable";
+"Tare mode" = "Tare mode";
+
+/* Settings : Filter Options  */
+
+"Filter Level" = "Filter Level";
+"Livestock filter" = "Livestock filter";
+"Motion filter" = "Motion filter";
+"Stability range" = "Stability range";
+"Output rate (ms)" = "Output rate (ms)";
+"Weighing AD/C speed)" = "Weighing AD/C speed";
+
+/* Settings : COM port  */
+"COM port" = "COM port";
+
+/* Settings : Scale definition   */
+
+"Allow negative settings" = "Allow negative weight";
+"Weighing unit" = "Weighing unit";
+"Decimal places" = "Decimal places";
+"Range mode" = "Range mode";
+"Single range" = "Single range";
+"2 ranges" = "2 ranges";
+"2 intervals" = "2 intervals";
+"Range 1" = "Range 1";
+"Range 2" = "Range 2";
+"Max" = "Max";
+"e" = "e";
+"Current A/D cts" = "Current A/D cts";
+"Initial Zero" = "Initial Zero";
+"Adjust Zero" = "Adjust Zero";
+"Slope Divisor" = "Slope Divisor";
+"Adjust Span" = "Adjust Span";
+"GEO code adjustment" = "GEO code adjustment";
+"GEO code place of use" = "GEO code place of use";
+"Last Change" = "Last Change";
+"Counter" = "Counter";
+"Save Adjust" = "Save Adjust";
+"Scale Reset" = "Scale Reset";
+"Restore Adjust" = "Restore Adjust";

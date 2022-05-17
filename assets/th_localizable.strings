@@ -1,0 +1,170 @@
+/* 
+  Localizable.strings
+  GRAM_01
+
+  Created by Francisco Gorina Vanrell on 06/11/2019.
+  Copyright © 2019 Francisco Gorina. All rights reserved.
+*/
+"Yes" = "ใช่";
+"No" = "ไม่";
+"OK" = "ตกลง";
+"Cancel" = "ยกเลิก";
+"Enter Tare Name" = "ป้อนชื่อ Tare";
+"User" = "ผู้ใช้";
+"Customer" = "ลูกค้า";
+"Number" = "จำนวน";
+"Date" = "วัน";
+"Time" = "เวลา";
+"Item" = "รายการ";
+"Net Weight" = "น้ำหนักสุทธิ";
+"Tare" = "เมื่อทดค่า";
+"Gross Weight" = "น้ำหนักรวม";
+"<User>" = "<ผู้ใช้>";
+"<Customer>" = "<ลูกค้า>";
+"<Code>" = "<code>";
+"Protected by Sealing Switch" = "ป้องกันโดยการปิดผนึกสวิตช์";
+"Read Only Record" = "อ่านอย่างเดียวบันทึก";
+"Incorrect value / Out of range" = "ค่าไม่ถูกต้อง / อยู่นอกช่วง";
+"Unknown error value" = "ค่าข้อผิดพลาดที่ไม่รู้จัก";
+"Error \(dataSent[0])" = "ข้อผิดพลาด \ (dataSent [0])";
+"Deleting records" = "การลบบันทึก";
+"Are you sure you want to delete ALL records?" = "คุณแน่ใจหรือว่าต้องการลบบันทึกทั้งหมด";
+"Error \(error) while trying to delete \(url)" = "ข้อผิดพลาด \ (ข้อผิดพลาด) ขณะพยายามลบ \ (url)";
+"Delete" = "ลบ";
+"Scanning not supported" = "ไม่รองรับการสแกน";
+"Your device does not support scanning a code from an item. Please use a device with a camera." = "อุปกรณ์ของคุณไม่รองรับการสแกนรหัสจากรายการโปรดใช้อุปกรณ์ที่มีกล้อง";
+"Waiting for code" = "รอรหัส";
+"Enter Code" = "ใส่รหัส";
+"Enter SSID" = "ป้อน SSID";
+"Enter Password" = "ใส่รหัสผ่าน";
+"NetworkViewController.doChangePassword" = "NetworkViewController.doChangePassword";
+"Change Passwd Message" = "เปลี่ยนข้อความรหัสผ่าน";
+"SetupkViewController.doChangeSSID" = "SetupkViewController.doChangeSSID";
+"Change SSID Message" = "เปลี่ยนข้อความ SSID";
+"Update SSID" = "อัปเดต SSID";
+"Update Password" = "อัปเดตรหัสผ่าน";
+"+" = "+";
+"HR" = "ทรัพยากรบุคคล";
+"Limits" = "ขีด จำกัด";
+"Hold" = "ถือ";
+"→T←" = "→ T ←";
+"→0←" = "→ 0 ←";
+"Scanning not supported" = "ไม่รองรับการสแกน";
+"Your device does not support scanning a code from an item. Please use a device with a camera." = "อุปกรณ์ของคุณไม่รองรับการสแกนรหัสจากรายการโปรดใช้อุปกรณ์ที่มีกล้อง";
+"Enter User" = "ป้อนผู้ใช้";
+"Enter Customer" = "ป้อนลูกค้า";
+"Enter Code" = "ใส่รหัส";
+"Scanner not implemented" = "ไม่ได้ใช้งานเครื่องสแกน";
+"Please, contact your dealer." = "กรุณาติดต่อตัวแทนจำหน่ายของคุณ";
+"Export not implemented" = "การส่งออกไม่ได้ใช้งาน";
+
+/* Added fields from Storyboard */
+"Clear" = "ชัดเจน";
+"Export" = "ส่งออก";
+"Columns" = "คอลัมน์";
+"Gross W" = "ยอดรวม";
+"Displayed Fields" = "ฟิลด์ที่แสดง";
+"Auto Tare" = "Auto Tare";
+"Tare when stable" = "เมื่อทดค่าเสถียรภาพ";
+"Tare mode" = "เมื่อทดค่าโหมด";
+"Zero Tracking device" = "อุปกรณ์ติดตาม Zero";
+"Zero Tracking Rng" = "Zero Tracking Rng";
+"Filter Level" = "ระดับตัวกรอง";
+"Livestock filter" = "กรองปศุสัตว์";
+"Records no 0" = "บันทึกหมายเลข 0";
+"Settings" = "การตั้งค่า";
+"Name" = "ชื่อ";
+"Passphrase" = "ข้อความรหัสผ่าน";
+"IP Address" = "ที่อยู่ IP";
+"Port" = "ท่าเรือ";
+"Network SSID" = "เครือข่าย SSID";
+
+"Import Label" = "Import Label";
+"Permission was not granted" = "Permission was not granted";
+"Import Label " = "Import Label ";
+"Select Label" = "SSelect Label";
+"Users" = "Users";
+"Customers = "Customers";
+"Products" = "Products";
+"Refresh" = "Refresh";
+"Printer Name" = "Printer name";
+"Protocol" = "Protocol";
+"Current Label" = "Current Label";
+"Configure" = "Configure";
+"Disconnected" = "Disconnected";
+"Connecting" = "Connecting";
+"Disconnecting" = "Disconnecting";
+"Looking for services" = "Looking for services";
+"Checking device type" = "Checking device type";
+
+/* Settings : Titles */
+
+"General" = "General";
+"Zero Options" = "Zero Options";
+"Tare Options" = "Tare Options";
+"Filter Options" = "Filter Options";
+"COM port" = "COM port";
+"Scale Definition" = "Scale Definition";
+"Printer" = "Printer";
+"Databases" = "Databases";
+"About App" = "About App";
+
+/* Settings : General  */
+
+"Name" = "Name";
+"Serial Number" = "Serial Number";
+"Device Id" = "Device Id";
+"Type" = "Type";
+"Software Version" = "Software Version";
+"Optional Board" = "Optional Board";
+"Sealing Switch" = "Sealing Switch";
+
+/* Settings : Zero Options  */
+"Initial Zero Setting" = "Initial Zero Setting";
+"Initial Zero Range" = "Initial Zero Range";
+"Zero Tracking Device" = "Zero Tracking Device";
+"Zero Tracking Range" = "Zero Tracking Range";
+
+/* Settings : Tare Options  */
+
+"Auto Tare" = "Auto Tare";
+"Tare when stable" = "Tare when stable";
+"Tare mode" = "Tare mode";
+
+/* Settings : Filter Options  */
+
+"Filter Level" = "Filter Level";
+"Livestock filter" = "Livestock filter";
+"Motion filter" = "Motion filter";
+"Stability range" = "Stability range";
+"Output rate (ms)" = "Output rate (ms)";
+"Weighing AD/C speed)" = "Weighing AD/C speed";
+
+/* Settings : COM port  */
+"COM port" = "COM port";
+
+/* Settings : Scale definition   */
+
+"Allow negative settings" = "Allow negative settings";
+"Weighing unit" = "Weighing unit";
+"Decimal places" = "Decimal places";
+"Range mode" = "Range mode";
+"Single range" = "Single range";
+"2 ranges" = "2 ranges";
+"2 intervals" = "2 intervals";
+"Range 1" = "Range 1";
+"Range 2" = "Range 2";
+"Max" = "Max";
+"e" = "e";
+"Current A/D cts" = "Current A/D cts";
+"Initial Zero" = "Initial Zero";
+"Adjust Zero" = "Adjust Zero";
+"Slope Divisor" = "Slope Divisor";
+"Adjust Span" = "Adjust Span";
+"GEO code adjustment" = "GEO code adjustment";
+"GEO code place of use" = "GEO code place of use";
+"Last Change" = "Last Change";
+"Counter" = "Counter";
+"Save Adjust" = "Save Adjust";
+"Scale Reset" = "Scale Reset";
+"Restore Adjust" = "Restore Adjust";

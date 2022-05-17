@@ -1,0 +1,184 @@
+/* 
+  Localizable.strings
+  GRAM_01
+
+  Created by Francisco Gorina Vanrell on 06/11/2019.
+  Copyright © 2019 Francisco Gorina. All rights reserved.
+*/
+"Yes" = "Sì";
+"No" = "No";
+"OK" = "OK";
+"Cancel" = "Annulla";
+"Enter Tare Name" = "Inserisci nome tara";
+"User" = "Utente";
+"Customer" = "Cliente";
+"Number" = "Numero";
+"Date" = "Data";
+"Time" = "Ora";
+"Item" = "Item";
+"Net Weight" = "Peso netto";
+"Tare" = "Tara";
+"Gross Weight" = "Peso lordo";
+"<User>" = "<Utente>";
+"<Customer>" = "<Cliente>";
+"<Code>" = "<Code>";
+"Protected by Sealing Switch" = "Protetto da interruttore di tenuta";
+"Read Only Record" = "Record di sola lettura";
+"Incorrect value / Out of range" = "Valore errato / Fuori portata";
+"Unknown error value" = "Valore di errore sconosciuto";
+"Error \(dataSent[0])" = "Errore \ (dataSent [0])";
+"Deleting records" = "Eliminazione di record";
+"Are you sure you want to delete ALL records?" = "Sei sicuro di voler eliminare TUTTI i record?";
+"Error \(error) while trying to delete \(url)" = "Errore \ (errore) durante il tentativo di eliminare \ (url)";
+"Delete" = "Elimina";
+"Scanning not supported" = "Scansione non supportata";
+"Your device does not support scanning a code from an item. Please use a device with a camera." = "Il dispositivo non supporta la scansione di un codice da un elemento. Utilizzare un dispositivo con una fotocamera.";
+"Waiting for code" = "In attesa di codice";
+"Enter Code" = "Inserisci codice";
+"Enter SSID" = "Inserisci SSID";
+"Enter Password" = "Inserire la password";
+"NetworkViewController.doChangePassword" = "NetworkViewController.doChangePassword";
+"Change Passwd Message" = "Modifica messaggio Passwd";
+"SetupkViewController.doChangeSSID" = "SetupkViewController.doChangeSSID";
+"Change SSID Message" = "Cambia messaggio SSID";
+"Update SSID" = "Aggiorna SSID";
+"Update Password" = "Aggiorna password";
+"+" = "+";
+"HR" = "HR";
+"Limits" = "Limiti";
+"Hold" = "HOLD";
+"→T←" = "→ T ←";
+"→0←" = "→ 0 ←";
+"Scanning not supported" = "Scansione non supportata";
+"Your device does not support scanning a code from an item. Please use a device with a camera." = "Il dispositivo non supporta la scansione di un codice da un elemento. Utilizzare un dispositivo con una fotocamera.";
+"Enter User" = "Inserisci utente";
+"Enter Customer" = "Inserisci cliente";
+"Enter Code" = "Inserisci codice";
+"Scanner not implemented" = "Scanner non implementato";
+"Please, contact your dealer." = "Si prega di contattare il proprio rivenditore.";
+"Export not implemented" = "Esportazione non implementata";
+
+/* Added fields from Storyboard */
+"Clear" = "Elimina";
+"Export" = "Esportare";
+"Columns" = "colonne";
+"Gross W" = "W lordo";
+"Displayed Fields" = "Campi visualizzati";
+"Auto Tare" = "Tara automatica";
+"Tare when stable" = "Tara quando stabile";
+"Tare mode" = "Modalità tara";
+"Zero Tracking device" = "Dispositivo di tracciamento zero";
+"Zero Tracking Rng" = "Zero Tracking Rng";
+"Filter Level" = "Livello del filtro";
+"Livestock filter" = "Filtro per bestiame";
+"Records no 0" = "Non registra 0";
+"Settings" = "impostazioni";
+"Name" = "Nome";
+"Passphrase" = "Frase d'accesso";
+"IP Address" = "Indirizzo IP";
+"Port" = "Porta";
+"Network SSID" = "SSID di rete";
+
+/* More fields for printer */
+"Label" = "Etichetta";
+"Connected" = "Collegato";
+"Scanning" = "Scansione";
+"Connect to Printer" = "Connetti alla stampante";
+
+"Enter Scale Name" = "Inserisci nome scala";
+"Enter Network Name" = "Inserisci nome rete";
+"Enter Network Password" = "Inserisci password di rete"
+"Enter Network IP" = "Inserisci IP di rete";
+"Net SSID" = "SSID rete";
+"Net DHCP" = "DHCP rete;
+"Net IP" = "IP rete";
+
+"Import Label" = "Import Label";
+"Permission was not granted" = "Permission was not granted";
+"Import Label " = "Import Label ";
+"Select Label" = "SSelect Label";
+"Users" = "Users";
+"Customers = "Customers";
+"Products" = "Products";
+"Refresh" = "Refresh";
+"Printer Name" = "Printer name";
+"Protocol" = "Protocol";
+"Current Label" = "Current Label";
+"Configure" = "Configure";
+"Disconnected" = "Disconnected";
+"Connecting" = "Connecting";
+"Disconnecting" = "Disconnecting";
+"Looking for services" = "Looking for services";
+"Checking device type" = "Checking device type";
+
+/* Settings : Titles */
+
+"General" = "General";
+"Zero Options" = "Zero Options";
+"Tare Options" = "Tare Options";
+"Filter Options" = "Filter Options";
+"COM port" = "COM port";
+"Scale Definition" = "Scale Definition";
+"Printer" = "Printer";
+"Databases" = "Databases";
+"About App" = "About App";
+
+/* Settings : General  */
+
+"Name" = "Name";
+"Serial Number" = "Serial Number";
+"Device Id" = "Device Id";
+"Type" = "Type";
+"Software Version" = "Software Version";
+"Optional Board" = "Optional Board";
+"Sealing Switch" = "Sealing Switch";
+
+/* Settings : Zero Options  */
+"Initial Zero Setting" = "Initial Zero Setting";
+"Initial Zero Range" = "Initial Zero Range";
+"Zero Tracking Device" = "Zero Tracking Device";
+"Zero Tracking Range" = "Zero Tracking Range";
+
+/* Settings : Tare Options  */
+
+"Auto Tare" = "Auto Tare";
+"Tare when stable" = "Tare when stable";
+"Tare mode" = "Tare mode";
+
+/* Settings : Filter Options  */
+
+"Filter Level" = "Filter Level";
+"Livestock filter" = "Livestock filter";
+"Motion filter" = "Motion filter";
+"Stability range" = "Stability range";
+"Output rate (ms)" = "Output rate (ms)";
+"Weighing AD/C speed)" = "Weighing AD/C speed";
+
+/* Settings : COM port  */
+"COM port" = "COM port";
+
+/* Settings : Scale definition   */
+
+"Allow negative settings" = "Allow negative settings";
+"Weighing unit" = "Weighing unit";
+"Decimal places" = "Decimal places";
+"Range mode" = "Range mode";
+"Single range" = "Single range";
+"2 ranges" = "2 ranges";
+"2 intervals" = "2 intervals";
+"Range 1" = "Range 1";
+"Range 2" = "Range 2";
+"Max" = "Max";
+"e" = "e";
+"Current A/D cts" = "Current A/D cts";
+"Initial Zero" = "Initial Zero";
+"Adjust Zero" = "Adjust Zero";
+"Slope Divisor" = "Slope Divisor";
+"Adjust Span" = "Adjust Span";
+"GEO code adjustment" = "GEO code adjustment";
+"GEO code place of use" = "GEO code place of use";
+"Last Change" = "Last Change";
+"Counter" = "Counter";
+"Save Adjust" = "Save Adjust";
+"Scale Reset" = "Scale Reset";
+"Restore Adjust" = "Restore Adjust";

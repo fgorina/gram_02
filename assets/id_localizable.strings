@@ -1,0 +1,184 @@
+/* 
+  Localizable.strings
+  GRAM_01
+
+  Created by Francisco Gorina Vanrell on 06/11/2019.
+  Copyright © 2019 Francisco Gorina. All rights reserved.
+*/
+"Yes" = "Iya";
+"No" = "Tidak";
+"OK" = "OK";
+"Cancel" = "Membatalkan";
+"Enter Tare Name" = "Masukkan Nama Tare";
+"User" = "Pengguna";
+"Customer" = "Pelanggan";
+"Number" = "Jumlah";
+"Date" = "Tanggal";
+"Time" = "Waktu";
+"Item" = "Barang";
+"Net Weight" = "Berat bersih";
+"Tare" = "Tara";
+"Gross Weight" = "Berat kotor";
+"<User>" = "<User>";
+"<Customer>" = "<Pelanggan>";
+"<Code>" = "<Kode>";
+"Protected by Sealing Switch" = "Dilindungi oleh Sealing Switch";
+"Read Only Record" = "Baca Hanya Rekam";
+"Incorrect value / Out of range" = "Nilai salah / Di luar jangkauan";
+"Unknown error value" = "Nilai kesalahan tidak dikenal";
+"Error \(dataSent[0])" = "Kesalahan \ (dataKirim [0])";
+"Deleting records" = "Menghapus catatan";
+"Are you sure you want to delete ALL records?" = "Apakah kamu yakin ingin menghapus SEMUA data?";
+"Error \(error) while trying to delete \(url)" = "Kesalahan \ (kesalahan) ketika mencoba menghapus \ (url)";
+"Delete" = "Menghapus";
+"Scanning not supported" = "Pemindaian tidak didukung";
+"Your device does not support scanning a code from an item. Please use a device with a camera." = "Perangkat Anda tidak mendukung pemindaian kode dari suatu item. Silakan gunakan perangkat dengan kamera.";
+"Waiting for code" = "Menunggu kode";
+"Enter Code" = "Memasukkan kode";
+"Enter SSID" = "Masukkan SSID";
+"Enter Password" = "Masukkan kata kunci";
+"NetworkViewController.doChangePassword" = "NetworkViewController.doChangePassword";
+"Change Passwd Message" = "Ubah Pesan Passwd";
+"SetupkViewController.doChangeSSID" = "SetupkViewController.doChangeSSID";
+"Change SSID Message" = "Ubah Pesan SSID";
+"Update SSID" = "Perbarui SSID";
+"Update Password" = "Perbarui Kata Sandi";
+"+" = "+";
+"HR" = "SDM";
+"Limits" = "Batas";
+"Hold" = "Hold";
+"→T←" = "→ T ←";
+"→0←" = "→ 0 ←";
+"Scanning not supported" = "Pemindaian tidak didukung";
+"Your device does not support scanning a code from an item. Please use a device with a camera." = "Perangkat Anda tidak mendukung pemindaian kode dari suatu item. Silakan gunakan perangkat dengan kamera.";
+"Enter User" = "Masukkan Pengguna";
+"Enter Customer" = "Masukkan Pelanggan";
+"Enter Code" = "Memasukkan kode";
+"Scanner not implemented" = "Pemindai tidak diterapkan";
+"Please, contact your dealer." = "Silakan hubungi dealer Anda.";
+"Export not implemented" = "Ekspor tidak diterapkan";
+
+/* Added fields from Storyboard */
+"Clear" = "Menghapus";
+"Export" = "Ekspor";
+"Columns" = "Kolom";
+"Gross W" = "Gross W";
+"Displayed Fields" = "Bidang yang Ditampilkan";
+"Auto Tare" = "Tara Otomatis";
+"Tare when stable" = "Tara saat stabil";
+"Tare mode" = "Mode tara";
+"Zero Tracking device" = "Perangkat Pelacakan Nol";
+"Zero Tracking Rng" = "Tanpa Pelacakan Rng";
+"Filter Level" = "Tingkat Filter";
+"Livestock filter" = "Filter ternak";
+"Records no 0" = "Rekaman no 0";
+"Settings" = "Pengaturan";
+"Name" = "Nama";
+"Passphrase" = "Frasa sandi";
+"IP Address" = "Alamat IP";
+"Port" = "Port";
+"Network SSID" = "Jaringan SSID";
+
+/* More fields for printer */
+"Label" = "Label";
+"Connected" = "Terhubung";
+"Scanning" = "Memindai";
+"Connect to Printer" = "Hubungkan ke Printer";
+
+"Enter Scale Name" = "Masukkan Nama Skala";
+"Enter Network Name" = "Masukkan Nama Jaringan";
+"Enter Network Password" = "Masukkan Sandi Jaringan"
+"Enter Network IP" = "Masukkan IP Jaringan";
+"Net SSID" = "SSID Jaringan";
+"Net DHCP" = "DHCP Jaringan";
+"Net IP" = "IP Jaringan";
+
+"Import Label" = "Import Label";
+"Permission was not granted" = "Permission was not granted";
+"Import Label " = "Import Label ";
+"Select Label" = "SSelect Label";
+"Users" = "Users";
+"Customers = "Customers";
+"Products" = "Products";
+"Refresh" = "Refresh";
+"Printer Name" = "Printer name";
+"Protocol" = "Protocol";
+"Current Label" = "Current Label";
+"Configure" = "Configure";
+"Disconnected" = "Disconnected";
+"Connecting" = "Connecting";
+"Disconnecting" = "Disconnecting";
+"Looking for services" = "Looking for services";
+"Checking device type" = "Checking device type";
+
+/* Settings : Titles */
+
+"General" = "General";
+"Zero Options" = "Zero Options";
+"Tare Options" = "Tare Options";
+"Filter Options" = "Filter Options";
+"COM port" = "COM port";
+"Scale Definition" = "Scale Definition";
+"Printer" = "Printer";
+"Databases" = "Databases";
+"About App" = "About App";
+
+/* Settings : General  */
+
+"Name" = "Name";
+"Serial Number" = "Serial Number";
+"Device Id" = "Device Id";
+"Type" = "Type";
+"Software Version" = "Software Version";
+"Optional Board" = "Optional Board";
+"Sealing Switch" = "Sealing Switch";
+
+/* Settings : Zero Options  */
+"Initial Zero Setting" = "Initial Zero Setting";
+"Initial Zero Range" = "Initial Zero Range";
+"Zero Tracking Device" = "Zero Tracking Device";
+"Zero Tracking Range" = "Zero Tracking Range";
+
+/* Settings : Tare Options  */
+
+"Auto Tare" = "Auto Tare";
+"Tare when stable" = "Tare when stable";
+"Tare mode" = "Tare mode";
+
+/* Settings : Filter Options  */
+
+"Filter Level" = "Filter Level";
+"Livestock filter" = "Livestock filter";
+"Motion filter" = "Motion filter";
+"Stability range" = "Stability range";
+"Output rate (ms)" = "Output rate (ms)";
+"Weighing AD/C speed)" = "Weighing AD/C speed";
+
+/* Settings : COM port  */
+"COM port" = "COM port";
+
+/* Settings : Scale definition   */
+
+"Allow negative settings" = "Allow negative settings";
+"Weighing unit" = "Weighing unit";
+"Decimal places" = "Decimal places";
+"Range mode" = "Range mode";
+"Single range" = "Single range";
+"2 ranges" = "2 ranges";
+"2 intervals" = "2 intervals";
+"Range 1" = "Range 1";
+"Range 2" = "Range 2";
+"Max" = "Max";
+"e" = "e";
+"Current A/D cts" = "Current A/D cts";
+"Initial Zero" = "Initial Zero";
+"Adjust Zero" = "Adjust Zero";
+"Slope Divisor" = "Slope Divisor";
+"Adjust Span" = "Adjust Span";
+"GEO code adjustment" = "GEO code adjustment";
+"GEO code place of use" = "GEO code place of use";
+"Last Change" = "Last Change";
+"Counter" = "Counter";
+"Save Adjust" = "Save Adjust";
+"Scale Reset" = "Scale Reset";
+"Restore Adjust" = "Restore Adjust";
