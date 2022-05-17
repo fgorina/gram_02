@@ -881,7 +881,7 @@ class GRAMConnection {
     enqueueMessage(GRAMMessage.getFirmwareVersion());
     enqueueMessage(GRAMMessage.getOptionalBoard());
     enqueueMessage(GRAMMessage.getOutputRate());
-   // enqueueMessage(GRAMMessage.getAdSpeed());
+    enqueueMessage(GRAMMessage.getAdSpeed());
     enqueueMessage(GRAMMessage.getBaudRate());
 
 
@@ -923,7 +923,7 @@ class GRAMConnection {
       enqueueMessage(GRAMMessage.getNetworkPassword());
 
 
-      //enqueueMessage(GRAMMessage.getAccessPoint());
+      enqueueMessage(GRAMMessage.getAccessPoint());
       enqueueMessage(GRAMMessage.getSSIDPassword());
       enqueueMessage(GRAMMessage.getIPAddress());
 
