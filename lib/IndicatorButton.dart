@@ -17,8 +17,7 @@ Widget indicatorWidget(double size, Color color){
 }
 Widget indicatorButton(String title, double size, Color color, Color disabledColor, Color textColor, Color indicatorColor,  Function f, BuildContext context, {invertColor: false}) {
 
-  var ssize = size * 0.2;
-  print("Sizes ${size}, ${ssize}");
+  var ssize = size * 0.2; // Mida relativa de l'indicador
 
   return SizedBox(
     width: size,
