@@ -1,16 +1,15 @@
 # gram_02
 
-A new Flutter project.
+Partint de gram_01_android però actualitzant a la  versió de flutter 3.0.0 i modificant :
 
-## Getting Started
+    - qr_scanner es substituit per mobile_scanner doncs hi havien llibreríes que ja no s'actuizaven
+    - download_provider es substituit per android_external_storage
 
-This project is a starting point for a Flutter application.
+Modificiació de RoundButton e IndicatorButton per fer servir ElevatedButton doncs MateriaButton està deprecat
 
-A few resources to get you started if this is your first Flutter project:
+Encara hi ha codi deprecat però s'hau`` d'anar corregint.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+S'han afegit a Git els fitxers que realment corresponen a l'aplicació i no els que ell genera automàticament. En principi un flutter create i 
+un pull de github hauria de funcionar.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+La id de l'aplicació continua sent gram_01`
