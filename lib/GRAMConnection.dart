@@ -875,17 +875,13 @@ class GRAMConnection {
   void getScaleData() {
     enqueueMessage(GRAMMessage.readAddress(AddressType.sealing));
     enqueueMessage(GRAMMessage.getSSIDName());
-    //enqueueMessage(GRAMMessage.getSerialNumber());
+    //enqueueMessage(GRAMMessage.getSerialNumber()); Automatically called from serialNumber!!!
     enqueueMessage(GRAMMessage.getDeviceId());
     enqueueMessage(GRAMMessage.getModuleBoardCode());
     enqueueMessage(GRAMMessage.getFirmwareVersion());
     enqueueMessage(GRAMMessage.getOptionalBoard());
     enqueueMessage(GRAMMessage.getOutputRate());
-    enqueueMessage(GRAMMessage.getAdSpeed());
     enqueueMessage(GRAMMessage.getBaudRate());
-
-
-
 
     enqueueMessage(GRAMMessage.getScaleUnit());
     enqueueMessage(GRAMMessage.getDecimalPointPosition());
@@ -911,6 +907,7 @@ class GRAMConnection {
 
     enqueueMessage(GRAMMessage.getGeoCode());
     enqueueMessage(GRAMMessage.getGeoCodeAdjustment());
+    enqueueMessage(GRAMMessage.getAdSpeed());
 
 
    }
@@ -923,7 +920,6 @@ class GRAMConnection {
       enqueueMessage(GRAMMessage.getNetworkPassword());
 
 
-      enqueueMessage(GRAMMessage.getAccessPoint());
       enqueueMessage(GRAMMessage.getSSIDPassword());
       enqueueMessage(GRAMMessage.getIPAddress());
 
@@ -932,6 +928,7 @@ class GRAMConnection {
 
 
       enqueueMessage(GRAMMessage.getTCPServerPort());
+      enqueueMessage(GRAMMessage.getAccessPoint());
 
 
       enqueueMessage(GRAMMessage.startStreaming());

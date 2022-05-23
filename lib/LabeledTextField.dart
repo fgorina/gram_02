@@ -320,3 +320,37 @@ Widget labeled1PopupField(String name, int index1,  List<int> values,
     ],
   );
 }
+
+Widget labeledStringPopupField(String name, int index1,  List<String> values,
+    Function(int) changed1,  {bool enabled = true,  bool visible = true}) {
+  return Row(
+    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    children: [
+      Container(
+        width: 150,
+        child: Text(name,
+            style: TextStyle(color: CC.widgetColor(WN.normalTextColor, 0))),
+      ),
+      Spacer(),
+
+
+      Container(
+        width: 100,
+        height: 40,
+        alignment: Alignment.centerRight,
+        decoration:BoxDecoration(
+          border: Border.all(color: Colors.black),
+          borderRadius: BorderRadius.circular(5.0),
+          color: Colors.white,
+        ),
+        child: visible ? DropdownButtonHideUnderline(
+          child: DropdownButton<int>(value: index1, icon:const Icon(Icons.arrow_downward),
+              onChanged:  changed1,
+              items: values.asMap().entries.map((entry) { return DropdownMenuItem<int>(value: entry.key, child: Text(entry.value));} ).toList()),
+        )  : Text(" "),
+      ),
+
+
+    ],
+  );
+}

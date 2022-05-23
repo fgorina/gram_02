@@ -35,6 +35,7 @@ class _PrinterSettingsState extends State<PrinterSettings> {
 
   List<int> printerWidths = [32, 36, 48, 80];
   List<int> printerSpeeds = [9600, 19200, 38400, 57600, 115200];
+  List<String> barcodes = [ "No Barcode", "UPC A", "UPC E", "EAN13", "EAN8", "Code 39", "2 of 5", "CODABAR", "Code 93", "Code128", 'QR'];
   @override
   void initState() {
     super.initState();
@@ -194,10 +195,27 @@ class _PrinterSettingsState extends State<PrinterSettings> {
     print("Printer Width :t ${value}");
   }
 
+  void setBarcode(int newValue){
+    setState(() {
+      model.barcode = newValue - 1;
+    });
+
+    model.saveDefaults();
+
+    print("New Barcode :t ${newValue - 1}");
+  }
+
   Widget build(BuildContext context) {
     return Wrap(runSpacing: 20.0, children: [
       labeledSegmentsFromText(model.tr.localize("Printing"),
           ["No", "Label 1", "Label 2", "User"], model.printing, setPrinting),
+      labeledStringPopupField(
+        model.tr.localize("Barcode Type"),
+        model.barcode+1,
+        barcodes,
+        setBarcode,
+
+      ),
       TextField(
           onChanged: setPrinterName,
           controller: TextEditingController(text: model.printerName),

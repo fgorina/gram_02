@@ -252,7 +252,8 @@ class GRAMModel {
   var urlCustomers = "http://192.168.1.21/customers.csv";
   var urlSend = "";
 
-  var printing = 0;
+  var printing = 0; // 0 -> No print , 1-> Print label 1, 2 -> Print label 2, 3 -> Print personalized ñabeñ
+  var  barcode = 4; // Barcode to print in std labels. -1 -> No barcode
   var labelName = "";
   Label label;
   int serialPrinterSpeed = 9600;
@@ -518,6 +519,7 @@ class GRAMModel {
       'itembarcode': _codeBarcode,
       'scale': scale.name,
       'printing': sprintf("%d", [printing]),
+      'barcode' : sprintf("%d", barcode),
       'label' : labelName,
       'urlusers': urlUsers,
       'urlcustomers': urlCustomers,
@@ -593,6 +595,15 @@ class GRAMModel {
           printing = iprinting;
         }
 
+        var sbarcode = json['barcode'];
+        if (sbarcode == null){
+          barcode = -1;
+        }else{
+          var ibarcode = int.parse(sbarcode);
+          barcode = ibarcode;
+        }
+
+
         var sprinter = json['printername'];
 
         if (sprinter != null){
@@ -662,8 +673,13 @@ class GRAMModel {
     //await printer.writeString(weight.formatted(2)+"\n\n\n");
     await printer.setBold(0);
 
-    print("Code ${_codeBarcode}");
-    await printer.writeBarcode(_codeBarcode, 4);
+    if (_codeBarcode.isNotEmpty){
+      if (barcode == 9){
+        await printer.writeQRCode(_codeBarcode);
+      }else if (barcode >= 0 && barcode < 9){
+        await printer.writeBarcode(_codeBarcode, barcode);
+      }
+    }
     await printer.writeString("\n");
 
    // await printer.writeString("\n\n\n\n\n\n");
@@ -713,12 +729,14 @@ class GRAMModel {
     await printer.writeString(sl +  "|" + sr + "\n");
     await printer.writeString(justifyRight("_", printerWidth, "_")    + "\n\n");
 
-    if(_codeBarcode.isNotEmpty) {
-      await printer.centerLine();
-      //print(_codeBarcode);
-      await printer.writeBarcode(_codeBarcode, 4);
+    if (_codeBarcode.isNotEmpty){
+      if (barcode == 9){
+        await printer.writeQRCode(_codeBarcode);
+      }else if (barcode >= 0 && barcode < 9){
+        await printer.writeBarcode(_codeBarcode, barcode);
+      }
     }
-    await printer.leftLine();
+     await printer.leftLine();
 
     await printer.writeString("\n");
 

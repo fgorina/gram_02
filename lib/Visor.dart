@@ -150,11 +150,6 @@ Widget buildVisor(GRAMModel model, context, ToggleQrProtocol father,
                         ),
 
                       ),
-
-
-
-
-
                     ]),
               ),
             ]),
@@ -187,8 +182,8 @@ Widget buildVisor(GRAMModel model, context, ToggleQrProtocol father,
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               //Spacer(flex:8),
-              Text(model.stable && model.isConnected() ? " ⃝ " : " ",
-                  textAlign: TextAlign.center, style: TextStyle(fontSize: 10)),
+              Text(model.stable && model.isConnected() ? "⦿": " ",
+                  textAlign: TextAlign.center, style: TextStyle(fontSize: 24)),
               Spacer(),
               Container(
                 width: 25,

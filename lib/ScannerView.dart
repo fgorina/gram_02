@@ -142,7 +142,7 @@ class _ScannerViewState extends State<ScannerView> with  ToggleQrProtocol {
             child:MobileScanner(
                 allowDuplicates: false,
                 controller: MobileScannerController(
-                    facing: CameraFacing.front, torchEnabled: true),
+                    facing: CameraFacing.back, torchEnabled: true),
                 onDetect: (barcode, args) {
                   if (barcode.rawValue == null) {
                     debugPrint('Failed to scan Barcode');
