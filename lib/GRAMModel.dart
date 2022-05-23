@@ -254,6 +254,7 @@ class GRAMModel {
 
   var printing = 0; // 0 -> No print , 1-> Print label 1, 2 -> Print label 2, 3 -> Print personalized ñabeñ
   var  barcode = 4; // Barcode to print in std labels. -1 -> No barcode
+  var leftMargin = 0; // Left label margin in characters. 1 char 12 pt
   var labelName = "";
   Label label;
   int serialPrinterSpeed = 9600;
@@ -520,6 +521,7 @@ class GRAMModel {
       'scale': scale.name,
       'printing': sprintf("%d", [printing]),
       'barcode' : sprintf("%d", barcode),
+      'leftmargin' : sprintf("%d", leftMargin),
       'label' : labelName,
       'urlusers': urlUsers,
       'urlcustomers': urlCustomers,
@@ -603,6 +605,13 @@ class GRAMModel {
           barcode = ibarcode;
         }
 
+        var sleftmargin = json['leftmargin'];
+        if (sleftmargin == null){
+          leftMargin = 0;
+        }else{
+          var ileftMargin = int.parse(sleftmargin);
+          leftMargin = ileftMargin;
+        }
 
         var sprinter = json['printername'];
 
@@ -691,6 +700,13 @@ class GRAMModel {
 
     int lr = (printerWidth / 2).floor();    // Ex 32 / 2 ->16
     int ll = printerWidth - lr - 1;   // 32 - 16 - 1 -> 15
+    lr = lr - leftMargin;
+
+    String sMargin = "";
+
+    for (int i = 0; i < leftMargin; i++){
+      sMargin += " ";
+    }
 
     await printer.startLabel(420);
     await printer.setFontSize(1);
@@ -700,15 +716,15 @@ class GRAMModel {
     String sl = justifyRight(dateString(record.when) + " " + shortTimeString(record.when) , ll, " ");
     String sr = justifyLeft(justifyRight(record.scale, 08, " ") + "|N:" + justifyLeft(sprintf("%d", [counter]), 5, '0'), lr, " ");
 
-    await printer.writeString(sl + "|" + sr + "\n");
+    await printer.writeString(sMargin + sl + "|" + sr + "\n");
 
     sl = justifyRight("User: "+ record.user, ll, " ");
     sr = justifyRight(record.customer, lr, " ");
 
-    await printer.writeString(sl+ "|" + sr +  "\n");
-    await printer.writeString(justifyRight("_", printerWidth, "_")    + "\n\n");
-    await printer.writeString(justifyRight("Product: " + record.code, ll + lr, " ") + "\n");
-    await printer.writeString("Net: \n");
+    await printer.writeString(sMargin + sl+ "|" + sr +  "\n");
+    await printer.writeString(sMargin + justifyRight("_", printerWidth - leftMargin, "_")    + "\n\n");
+    await printer.writeString(sMargin + justifyRight("Product: " + record.code, ll + lr - leftMargin, " ") + "\n");
+    await printer.writeString(sMargin + "Net: \n");
     await printer.setFontSize(2);
     await printer.setBold(1);
 
@@ -726,8 +742,8 @@ class GRAMModel {
     sl = justifyRight("Brut: "+ record.grossWeight.valueFormatted(decimalPointPosition, grouping: false) + " " + nWeight.symbol(), ll, " ");
     sr = justifyLeft( " Tare: " + record.tare.valueFormatted(decimalPointPosition, grouping: false)+ " " + nWeight.symbol(), lr, " ");
 
-    await printer.writeString(sl +  "|" + sr + "\n");
-    await printer.writeString(justifyRight("_", printerWidth, "_")    + "\n\n");
+    await printer.writeString(sMargin + sl +  "|" + sr + "\n");
+    await printer.writeString(sMargin + justifyRight("_", printerWidth - leftMargin, "_")    + "\n\n");
 
     if (_codeBarcode.isNotEmpty){
       if (barcode == 9){
