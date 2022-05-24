@@ -275,14 +275,14 @@ SetupViewController.swift "Enter SSID"*/
 /* Settings : Scale definition   */
 
 "Allow negative settings" = "Permetre pes negatiu";
-"Weighing unit" = "Unitat de pesadat";
-"Decimal places" = "Llocs Decimanls";
-"Range mode" = "Modo de Rangs";
+"Weighing unit" = "Unitat de pesada";
+"Decimal places" = "Llocs Decimals";
+"Range mode" = "Mode de Rangs";
 "Single range" = "Rang Únic";
 "2 ranges" = "2 rangs";
 "2 intervals" = "2 intervals";
 "Range 1" = "Rang 1";
-"Range 2" = "Rangd 2";
+"Range 2" = "Rang 2";
 "Max" = "Max";
 "e" = "e";
 "Current A/D cts" = "Corrent A/D cts";
@@ -298,6 +298,34 @@ SetupViewController.swift "Enter SSID"*/
 "Scale Reset" = "Reinicialitzar Bàscula";
 "Restore Adjust" = "Recuperar Ajustos";
 
+/* Settings : Advanced */
+
+"Advanced" = "Avançat";
+"AP" = "AP";
+"SSID as access point" = "SSID com a punt d'accés";
+"Password" = "Contrasenya";
+"IP base address" = "Adreça IP base";
+"Access Point" = "Punt d'accés";
+"Network  SSID" = "SSID xarxa";
+"Network Password" = "Contrasenya xarxa";
+"Network IP address" = "Adreça IP xarxa";
+"Network DHCP" = "DHCP xarxa";
+"TCP Server port" = "Port TCP servidor";
+"UDP remote port (PC side)" = "Port UDP remot (costat PC)";
+"UDP local port (XTREM side)" = "Port UDP local (costat XTREM)";
+"Reset network with current settings" = "RReiniciar xarxa amb els valors actuals";
+
+"Send URL" = "URL enviament";
+
+
+/* Settings Printer more */
+
+"Printing" = "Imprimir";
+"Left Margin" = "Marge esquerra";
+"Barcode Type" = "Tipus codi de barres";
+"Printer Width" = "Amplada impressora";
+"Serial Printer Speed" = "Velocitat impressora sèrie";
+"Import Label" = "Importar etiqueta";
 
 
 

@@ -246,9 +246,9 @@ class _PrinterSettingsState extends State<PrinterSettings> {
             labelText: model.tr.localize("Printer Name"),
           )),
       labeled1PopupField(
-          "Printer Width", widthIndex(), printerWidths, setWidth),
+    model.tr.localize("Printer Width"), widthIndex(), printerWidths, setWidth),
       labeled1PopupField(
-          "Serial Printer Speed", speedIndex(), printerSpeeds, setSpeed),
+    model.tr.localize("Serial Printer Speed"), speedIndex(), printerSpeeds, setSpeed),
       labeledSegmentsFromText(model.tr.localize("Protocol"), ["ESC", "CPCL"],
           model.printerType == 'ESC' ? 0 : 1, setPrinterType),
       Row(children: [
@@ -268,7 +268,7 @@ class _PrinterSettingsState extends State<PrinterSettings> {
       ]),
       Row(children: [
         Spacer(),
-        TextButton(onPressed: importLabel, child: Text('Import Label')),
+        TextButton(onPressed: importLabel, child: Text(model.tr.localize('Import Label'))),
         Spacer(),
       ]),
     ]);

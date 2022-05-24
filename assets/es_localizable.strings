@@ -178,3 +178,31 @@
 "Scale Reset" = "Reiniciar Báscula";
 "Restore Adjust" = "Recuperar Ajustes";
 
+/* Settings : Advanced */
+
+"Advanced" = "Avanzado";
+"AP" = "AP";
+"SSID as access point" = "SSID como punto de acceso";
+"Password" = "Contraseña";
+"IP base address" = "Dirección IP base";
+"Access Point" = "Punto de acceso";
+"Network  SSID" = "SSID red";
+"Network Password" = "Contraseña red";
+"Network IP address" = "Dirección IP red";
+"Network DHCP" = "DHCP red";
+"TCP Server port" = "Puerto TCP servidor";
+"UDP remote port (PC side)" = "Puerto remoto UDP (lado PC)";
+"UDP local port (XTREM side)" = "Puerto local UDPt (lado Xtrem)";
+"Reset network with current settings" = "Reiniciar red con los valores actuales";
+
+"Send URL" = "URL de envio";
+
+
+/* Settings Printer more */
+
+"Printing" = "Imprimir";
+"Left Margin" = "Márgen izquierdo";
+"Barcode Type" = "Tipo código de barras";
+"Printer Width" = "Ancho impresora";
+"Serial Printer Speed" = "Velocidad impresora serie";
+"Import Label" = "Importar etiqueta";

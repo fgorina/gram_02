@@ -520,8 +520,8 @@ class GRAMModel {
       'itembarcode': _codeBarcode,
       'scale': scale.name,
       'printing': sprintf("%d", [printing]),
-      'barcode' : sprintf("%d", barcode),
-      'leftmargin' : sprintf("%d", leftMargin),
+      'barcode' : sprintf("%d", [barcode]),
+      'leftmargin' : sprintf("%d", [leftMargin]),
       'label' : labelName,
       'urlusers': urlUsers,
       'urlcustomers': urlCustomers,
@@ -557,7 +557,7 @@ class GRAMModel {
 
     try {
       var jsonData = await file.readAsString();
-      print("JSON DATA");
+      print("LOAD DEFAULTS");
       print(jsonData);
       if (jsonData != "Error!") {
         var json = JsonDecoder().convert(jsonData);

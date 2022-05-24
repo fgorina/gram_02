@@ -216,7 +216,7 @@ SetupViewController.swift "Enter SSID"*/
 "Import Label" = "Import Label";
 "Permission was not granted" = "Permission was not granted";
 "Import Label " = "Import Label ";
-"Select Label" = "SSelect Label";
+"Select Label" = "Select Label";
 "Users" = "Users";
 "Customers = "Customers";
 "Products" = "Products";
@@ -302,3 +302,38 @@ SetupViewController.swift "Enter SSID"*/
 "Save Adjust" = "Save Adjust";
 "Scale Reset" = "Scale Reset";
 "Restore Adjust" = "Restore Adjust";
+
+/* Settings : Advanced */
+
+"Advanced" = "Advanced";
+"AP" = "AP";
+"SSID as access point" = "SSID as access point";
+"Password" = "Password";
+"IP base address" = "IP base address";
+"Access Point" = "Access Point";
+"Network  SSID" = "Network  SSID";
+"Network Password" = "Network Password";
+"Network IP address" = "Network IP address";
+"Network DHCP" = "Network DHCP";
+"TCP Server port" = "TCP Server port";
+"UDP remote port (PC side)" = "UDP remote port (PC side)";
+"UDP local port (XTREM side)" = "UDP local port (XTREM side)";
+"Reset network with current settings" = "Reset network with current settings";
+
+"Send URL" = "Send URL";
+
+
+/* Settings Printer more */
+
+"Printing" = "Printing";
+"Left Margin" = "Left Margin";
+"Barcode Type" = "Barcode Type";
+"Printer Width" = "Printer Width";
+"Serial Printer Speed" = "Serial Printer Speed";
+"Import Label" = "Import Label";
+
+
+
+
+
+

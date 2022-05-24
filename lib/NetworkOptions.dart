@@ -134,7 +134,7 @@ class _NetworkOptionsState extends State<NetworkOptions> {
             model.netIp, setNetworkAddress),
         labeledSwitch(model.tr.localize("Network DHCP"), model.netDhcp,
             setMyNetworkDHCP), // TODO: Assign var
-        labeledNumericField(model.tr.localize("TCP Server port)"),
+        labeledNumericField(model.tr.localize("TCP Server port"),
             model.tcpServerPort.toString(), setTCPServerPort),
         labeledNumericField(model.tr.localize("UDP remote port (PC side)"),
             model.udpRemotePort.toString(), setUDPRemotePort),
@@ -171,7 +171,7 @@ class _NetworkOptionsState extends State<NetworkOptions> {
         labeledTextField(model.tr.localize("IP base address"),
             model.ipBaseAddress, setAPIPAddress),
 
-        labeledSwitch(model.tr.localize("AccessPoint"), model.isAccessPoint,
+        labeledSwitch(model.tr.localize("Access Point"), model.isAccessPoint,
             setAccessPoint), // TODO: Assign var
 
 
@@ -192,7 +192,7 @@ class _NetworkOptionsState extends State<NetworkOptions> {
 
         Text("PORTS"),
 
-        labeledNumericField(model.tr.localize("TCP Server port)"),
+        labeledNumericField(model.tr.localize("TCP Server port"),
             model.tcpServerPort.toString(), setTCPServerPort),
         labeledNumericField(model.tr.localize("UDP remote port (PC side)"),
             model.udpRemotePort.toString(), setUDPRemotePort),
