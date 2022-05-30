@@ -7,7 +7,7 @@ import 'DataTypesUtilities.dart';
 import 'ActiveText.dart';
 import 'SlideRoutes.dart';
 import 'Units.dart';
-import 'IconAndFilesUtilities.dart';
+
 
 import 'ScaleSelector.dart';
 
@@ -103,14 +103,31 @@ Widget buildShortHeader(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
-                    iconForConnectionState(model, null, null,
-                        context), //(model,  connect, disconnect, context),
-                    Text("   "),
-
+                    activeIcon(
+                        model.isConnected()
+                            ? Icons.wifi
+                            : Icons.portable_wifi_off,
+                        model.isConnected() ? disconnect : connect,
+                        context,
+                        size: 18.0),
                     Text(textForScaleNameWidget(model),
-                        style: TextStyle(fontWeight: FontWeight.bold)),
+                        style: TextStyle(
+                            color: CC.widgetColor(WN.normalTextColor, 0),
+                            fontWeight: FontWeight.bold)),
+                    Text(model.isConnected()
+                        ? (model.sealed
+                        ? "   XTREM TC12136  ${model.serialNumber}  "
+                        : "   XTREM  ${model.serialNumber}")
+                        : ""),
+                    Container(
+                        height: 20,
+                        padding: EdgeInsets.only(
+                            left: 0.0, top: 0.0, right: 0.0, bottom: 0.0),
+                        child: class_iii_widget(model)
 
-                    // End of Scale Name
+                      //FlatButton(child: getImage("class_III_icon", 0),),
+                    ),
+                    // Icon(model.sealed ? Icons.lock : Icons.lock_open, size: 15.0),
                   ],
                 ), // Scale
                 Row(

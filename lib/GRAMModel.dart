@@ -390,7 +390,7 @@ class GRAMModel {
     DeviceInfoPlugin deviceInfo = await DeviceInfoPlugin();
     AndroidDeviceInfo androidInfo = await deviceInfo.androidInfo;
     var version = androidInfo.version;
-    var sdkInt = version.sdkInt;
+    //var sdkInt = version.sdkInt;
     var deviceModel = androidInfo.model;
 
     DeviceType aDeviceType = deviceModel == "SBC3300" ? DeviceType.terminal : DeviceType.phone;
@@ -765,7 +765,7 @@ class GRAMModel {
   Future<void> sendWeight(Map jsonMap) async {
 
     String data = json.encode(jsonMap);
-    List<int> utf8Data = utf8.encode(data);
+    // List<int> utf8Data = utf8.encode(data);
     HttpClient httpClient = new HttpClient();
     httpClient.postUrl(Uri.parse(urlSend)).then((request) {
       request.headers.add(HttpHeaders.contentTypeHeader, "text/json");
