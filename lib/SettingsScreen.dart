@@ -21,6 +21,7 @@ import 'package:flutter_keyboard_size/flutter_keyboard_size.dart';
 import 'LabeledSlider.dart';
 import 'Dialogs.dart';
 import 'NetworkOptions.dart';
+import 'package:barcode_widget/barcode_widget.dart';
 
 class SettingsScreen extends StatefulWidget {
   @override
@@ -42,19 +43,28 @@ class _SettingsScreenState extends State<SettingsScreen> {
     super.initState();
 
     items.add(new SettingsItem(model.tr.localize("General"), general, false));
-    items.add(new SettingsItem(model.tr.localize("Zero Options"), zeroOptions, false));
-    items.add(new SettingsItem(model.tr.localize("Tare Options"), tareOptions, false));
-    items.add(new SettingsItem(model.tr.localize("Filter Options"), filterOptions, false));
-    items.add(new SettingsItem(model.tr.localize("COM port"), comPortOptions, false));
-    items.add(new SettingsItem(model.tr.localize("Scale Definition"), scaleDefinition, false));
-    if(deviceType != DeviceType.terminal) {
-      items.add(new SettingsItem(model.tr.localize("Licenses"), licenses, true));
+    items.add(new SettingsItem(
+        model.tr.localize("Zero Options"), zeroOptions, false));
+    items.add(new SettingsItem(
+        model.tr.localize("Tare Options"), tareOptions, false));
+    items.add(new SettingsItem(
+        model.tr.localize("Filter Options"), filterOptions, false));
+    items.add(
+        new SettingsItem(model.tr.localize("COM port"), comPortOptions, false));
+    items.add(new SettingsItem(
+        model.tr.localize("Scale Definition"), scaleDefinition, false));
+    if (deviceType != DeviceType.terminal) {
+      items
+          .add(new SettingsItem(model.tr.localize("Licenses"), licenses, true));
     }
-    items.add(new SettingsItem(model.tr.localize("Printer"), printerSettings, true));
-    items.add(new SettingsItem(model.tr.localize("Databases"), databaseSettings, true));
+    items.add(
+        new SettingsItem(model.tr.localize("Printer"), printerSettings, true));
+    items.add(new SettingsItem(
+        model.tr.localize("Databases"), databaseSettings, true));
 
-    if (model.optionalBoard == "01" || model.optionalBoard == "02" || true ) {
-      items.add(new SettingsItem(model.tr.localize("Advanced"), networkOptions, false));
+    if (model.optionalBoard == "01" || model.optionalBoard == "02" || true) {
+      items.add(new SettingsItem(
+          model.tr.localize("Advanced"), networkOptions, false));
     }
     items.add(new SettingsItem(model.tr.localize("About App"), about, true));
 
@@ -73,11 +83,16 @@ class _SettingsScreenState extends State<SettingsScreen> {
             padding:
                 EdgeInsets.only(left: 0.0, top: 5.0, right: 0.0, bottom: 5.0),
             child: Text(item.title,
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color:model.isConnected() || item.alwaysActive ? Colors.black : Colors.grey))),
+                style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: model.isConnected() || item.alwaysActive
+                        ? Colors.black
+                        : Colors.grey))),
         onTap: () {
-         if ( model.isConnected() || item.alwaysActive) {
+          if (model.isConnected() || item.alwaysActive) {
             selectItem(item);
-         }
+          }
         });
   }
 
@@ -127,7 +142,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   child: Container(
                     width: 180,
                     height: screenHeight(context) - 80.0 - _res.keyboardHeight,
-                    child: SingleChildScrollView(child: leftWidget(), controller: ScrollController()),
+                    child: SingleChildScrollView(
+                        child: leftWidget(), controller: ScrollController()),
                   ),
                 ),
               ),
@@ -136,12 +152,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     left: 8.0, top: 10.0, right: 08.0, bottom: 10.0),
                 child: Scrollbar(
                   isAlwaysShown: true,
-                    child: Container(
-                  width: screenWidth(context) - 220,
-                  height: screenHeight(context) - 80.0 - _res.keyboardHeight,
-                  child:
-                      SingleChildScrollView(child: rightItem.detail(context), controller: ScrollController()),
-                ),
+                  child: Container(
+                    width: screenWidth(context) - 220,
+                    height: screenHeight(context) - 80.0 - _res.keyboardHeight,
+                    child: SingleChildScrollView(
+                        child: rightItem.detail(context),
+                        controller: ScrollController()),
+                  ),
                 ),
               ),
             ]),
@@ -156,7 +173,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
           PopupMenuButton(
               onSelected: selectItem,
               itemBuilder: (BuildContext context) => items
-                  .map((e) => PopupMenuItem(value: e, child: Text(e.title), enabled: model.isConnected() || e.alwaysActive))
+                  .map((e) => PopupMenuItem(
+                      value: e,
+                      child: Text(e.title),
+                      enabled: model.isConnected() || e.alwaysActive))
                   .toList()),
           Spacer(),
           Text(rightItem.title,
@@ -170,7 +190,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
           child: Container(
             height: screenHeight(context) - 80 - _res.keyboardHeight,
             width: screenWidth(context) - 40,
-            child: SingleChildScrollView(child: rightItem.detail(context), controller: ScrollController(),),
+            child: SingleChildScrollView(
+              child: rightItem.detail(context),
+              controller: ScrollController(),
+            ),
           ),
         ),
         Spacer(),
@@ -489,9 +512,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   /* Advanced : Network */
 
-
   Widget networkOptions(BuildContext context) {
-
     return NetworkOptions();
   }
 
@@ -554,7 +575,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       Text("MD5 Digest", style: TextStyle(fontWeight: FontWeight.bold)),
       Text(model.apkHash, style: TextStyle(fontSize: 12)),
       SizedBox(height: 10.0),
-      TextButton(
+      /*TextButton(
         onPressed: () => Navigator.push(
             context, SlideLeftRoute(widget: DocumentViewer(model.manualURL))),
         child: Text(
@@ -563,6 +584,17 @@ class _SettingsScreenState extends State<SettingsScreen> {
             color: CC.labelColor(CL.link, 0),
           ),
         ),
+      ),
+
+       */
+
+      SizedBox(height: 10.0),
+      BarcodeWidget(
+        barcode: Barcode.qrCode(),
+        data: "https://gram-group.com/xtrem-presentation/",
+        width: 100,
+        height: 100,
+        backgroundColor: Colors.white,
       ),
       SizedBox(height: 10.0),
       TextButton(

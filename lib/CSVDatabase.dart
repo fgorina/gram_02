@@ -5,6 +5,7 @@ import 'package:csv/csv_settings_autodetection.dart';
 import 'package:csv/csv.dart';
 import 'package:http/http.dart' as http;
 import 'LocalFileSystemUtilities.dart';
+import 'package:permission_handler/permission_handler.dart';
 import "Log.dart";
 
 class CSVDatabase {
@@ -31,17 +32,27 @@ class CSVDatabase {
 
   Future<void> refresh() async {
 
-    Log.shared.trace("CSVDatatabase refresh", "Refreshing ${this.url}");
+    Log.shared.info("CSVDatatabase refresh", "Refreshing ${this.url}");
 
     try {
-      var response = await http.get(url);
+      String bodyData;
 
-      fromString(response.body);
+      if(url.scheme != "file"){
+        var response = await http.get(url);
+        bodyData = response.body;
 
+      }else {
+        await Permission.storage.request();
+        var file = File(url.path);
+        bodyData = file.readAsStringSync();
+
+      }
+
+      fromString(bodyData);
       await save(); // Save the data in local file
 
     }catch(e){
-      Log.shared.trace("CSVDatatabase refresh error", e.toString());
+      Log.shared.error("CSVDatatabase refresh error", e.toString());
     }
   }
 

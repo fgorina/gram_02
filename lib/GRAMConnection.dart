@@ -892,6 +892,7 @@ class GRAMConnection {
     enqueueMessage(GRAMMessage.getMax2());
     enqueueMessage(GRAMMessage.gete2());
 
+
     enqueueMessage(GRAMMessage.getAllowNegativeWeight());
 
     enqueueMessage(GRAMMessage.getInitialZero());
@@ -933,6 +934,10 @@ class GRAMConnection {
 
       enqueueMessage(GRAMMessage.startStreaming());
 
+
+  }
+
+  void getRanges(){
 
   }
   void getSetupData() {

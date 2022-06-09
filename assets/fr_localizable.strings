@@ -66,11 +66,11 @@ GRAMModel.swift "User"*/
 "Changing Network Password" = "Changing Network Password";
 
 /*Protocol/GRAMMessage.swift  "Protected by Sealing Switch"*/
-"Protected by Sealing Switch" = "Protégé par l'interrupteur d'étanchéité";
+"Protected by Sealing Switch" = "Verrouillé";
 /*Protocol/GRAMMessage.swift  "Read Only Record"*/
 "Read Only Record" = "Enregistrement en lecture seule";
 /*Protocol/GRAMMessage.swift  "Incorrect value / Out of range"*/
-"Incorrect value / Out of range" = "Valeur incorrecte";
+"Incorrect value / Out of range" = "Valeur hors plage";
 /*Protocol/GRAMMessage.swift  "Unknown error value"*/
 "Unknown error value" = "Valeur d'erreur inconnue";
 /*Protocol/GRAMMessage.swift "Error \(dataSent[0])"*/
@@ -106,7 +106,7 @@ ScaleDatabaseViewController.swift "Error, path inexistent"*/
 
 /*
 ScannerViewController.swift "Scanning not supported"*/
-"Scanning not supported" = "Numérisation non prise en charge";
+"Scanning not supported" = "Scanner non detécté";
 /*ScannerViewController.swift "Your device does not support scanning a code from an item. Please use a device with a camera."*/
 "Your device does not support scanning a code from an item. Please use a device with a camera." = "Votre appareil ne prend pas en charge la numérisation du code d'un article. Veuillez utiliser un appareil avec une caméra.";
 /*ScannerViewController.swift "Waiting for code"*/
@@ -168,14 +168,14 @@ SetupViewController.swift "Enter SSID"*/
 "Enter Code" = "Entrez le code";
 /*ViewController.swift "showLogsSegue"*/
 "showLogsSegue" = "showLogsSegue";
-"Scanner not implemented" = "Scanner non implémenté";
+"Scanner not implemented" = "Scanner n'est pas activé.";
 "Please, contact your dealer." = "S'il vous plaît, contactez votre revendeur.";
-"Export not implemented" = "Export pas implémenté";
+"Export not implemented" = "L'exportation des données n'est pas activée";
 
 /* Added fields from Storyboard */
 "Clear" = "Supprimer";
 "Export" = "Exportation";
-"Columns" = "Les colonnes";
+"Columns" = "Colonnes";
 "Gross W" = "W brut";
 "Displayed Fields" = "Champs affichés";
 "Auto Tare" = "Tare automatique";
@@ -184,11 +184,11 @@ SetupViewController.swift "Enter SSID"*/
 "Zero Tracking device" = "Dispositif de suivi zéro";
 "Zero Tracking Rng" = "Zéro Suivi Rng";
 "Filter Level" = "Niveau de filtre";
-"Livestock filter" = "Filtre à bétail";
+"Livestock filter" = "Filtre pèse-bétail";
 "Records no 0" = "Records no 0";
-"Settings" = "Paramètres";
-"Name" = "prénom";
-"Passphrase" = "Phrase secrète";
+"Settings" = "Configuration";
+"Name" = "Nom";
+"Passphrase" = "Mot de pas";
 "IP Address" = "Adresse IP";
 "Port" = "Port";
 "Network SSID" = "SSID du réseau";
@@ -196,8 +196,8 @@ SetupViewController.swift "Enter SSID"*/
 
 /* More fields for printer */
 "Label" = "Etiquette";
-"Connected" = "Lié";
-"Scanning" = "Balayage";
+"Connected" = "Connecté";
+"Scanning" = "Scanning";
 "Connect to Printer" = "Connectez-vous à l'imprimante";
 
 "Enter Scale Name" = "Entrer le nom de la balance";
@@ -208,92 +208,123 @@ SetupViewController.swift "Enter SSID"*/
 "Net DHCP" = "DHCP réseau;
 "Net IP" = "IP réseau";
 
-"Import Label" = "Import Label";
-"Permission was not granted" = "Permission was not granted";
+"Import Label" = "Importation modèle étiquette";
+"Permission was not granted" = "Autorisation refusée";
 "Import Label " = "Import Label ";
-"Select Label" = "SSelect Label";
-"Users" = "Users";
+"Select Label" = "Choix de l'étiquette";
+"Users" = "Utilisateurs";
 "Customers = "Customers";
-"Products" = "Products";
-"Refresh" = "Refresh";
-"Printer Name" = "Printer name";
-"Protocol" = "Protocol";
-"Current Label" = "Current Label";
-"Configure" = "Configure";
-"Disconnected" = "Disconnected";
-"Connecting" = "Connecting";
-"Disconnecting" = "Disconnecting";
-"Looking for services" = "Looking for services";
-"Checking device type" = "Checking device type";
+"Products" = "Produits";
+"Refresh" = "Refraichir";
+"Printer Name" = "Nom imprimante";
+"Protocol" = "Protocole";
+"Current Label" = "Étiquette actuelle";
+"Configure" = "Configurer";
+"Disconnected" = "Déconnecté";
+"Connecting" = "Connexion en cours";
+"Disconnecting" = "Déconnexion en cours";
+"Looking for services" = "À la recherche de services";
+"Checking device type" = "Vérification du type d'appareil";
 
 /* Settings : Titles */
 
 "General" = "General";
-"Zero Options" = "Zero Options";
-"Tare Options" = "Tare Options";
-"Filter Options" = "Filter Options";
+"Zero Options" = "Options zéro";
+"Tare Options" = "Options de tare";
+"Filter Options" = "Options de filtre";
 "COM port" = "COM port";
-"Scale Definition" = "Scale Definition";
-"Printer" = "Printer";
-"Databases" = "Databases";
-"About App" = "About App";
+"Scale Definition" = "Configuration de la balance";
+"Printer" = "Imprimante";
+"Databases" = "Base de données";
+"About App" = "Info appli";
 
 /* Settings : General  */
 
-"Name" = "Name";
-"Serial Number" = "Serial Number";
-"Device Id" = "Device Id";
+"Name" = "Nom";
+"Serial Number" = "Numéro de série";
+"Device Id" = "Id dispositif";
 "Type" = "Type";
-"Software Version" = "Software Version";
-"Optional Board" = "Optional Board";
-"Sealing Switch" = "Sealing Switch";
+"Software Version" = "Version du firmware";
+"Optional Board" = "Carte optionnelle";
+"Sealing Switch" = "Vérrouillage";
 
 /* Settings : Zero Options  */
-"Initial Zero Setting" = "Initial Zero Setting";
-"Initial Zero Range" = "Initial Zero Range";
-"Zero Tracking Device" = "Zero Tracking Device";
-"Zero Tracking Range" = "Zero Tracking Range";
+"Initial Zero Setting" = "Mise à zero initiale";
+"Initial Zero Range" = "Plage zéro initiale";
+"Zero Tracking Device" = "Zéro suiveur";
+"Zero Tracking Range" = "Plage zéro suiveur";
 
 /* Settings : Tare Options  */
 
 "Auto Tare" = "Auto Tare";
-"Tare when stable" = "Tare when stable";
+"Tare when stable" = "Tarer si stable";
 "Tare mode" = "Tare mode";
 
 /* Settings : Filter Options  */
 
 "Filter Level" = "Filter Level";
 "Livestock filter" = "Livestock filter";
-"Motion filter" = "Motion filter";
-"Stability range" = "Stability range";
-"Output rate (ms)" = "Output rate (ms)";
-"Weighing AD/C speed)" = "Weighing AD/C speed";
+"Motion filter" = "Filtre de mouvement";
+"Stability range" = "Plage de stabilité";
+"Output rate (ms)" = "Fréquence de sortie (ms)";
+"Weighing AD/C speed)" = "Vitesse de pesée AD/C";
 
 /* Settings : COM port  */
 "COM port" = "COM port";
 
 /* Settings : Scale definition   */
 
-"Allow negative settings" = "Allow negative settings";
-"Weighing unit" = "Weighing unit";
-"Decimal places" = "Decimal places";
+"Allow negative settings" = "Autoriser les valeurs négatives";
+"Weighing unit" = "Unité de pesée";
+"Decimal places" = "Décimales";
 "Range mode" = "Range mode";
-"Single range" = "Single range";
+"Single range" = "Monoéchelon";
 "2 ranges" = "2 ranges";
-"2 intervals" = "2 intervals";
+"2 intervals" = "2 étendues";
 "Range 1" = "Range 1";
 "Range 2" = "Range 2";
 "Max" = "Max";
 "e" = "e";
-"Current A/D cts" = "Current A/D cts";
-"Initial Zero" = "Initial Zero";
-"Adjust Zero" = "Adjust Zero";
-"Slope Divisor" = "Slope Divisor";
-"Adjust Span" = "Adjust Span";
-"GEO code adjustment" = "GEO code adjustment";
-"GEO code place of use" = "GEO code place of use";
-"Last Change" = "Last Change";
-"Counter" = "Counter";
-"Save Adjust" = "Save Adjust";
-"Scale Reset" = "Scale Reset";
-"Restore Adjust" = "Restore Adjust";
+"Current A/D cts" = "A/D cts";
+"Initial Zero" = "Zéro initial";
+"Adjust Zero" = "Réglage zéro";
+"Slope Divisor" = "Diviseur de pente";
+"Adjust Span" = "Réglage portée";
+"GEO code adjustment" = "Code GEO pour le lieu du réglage";
+"GEO code place of use" = "Code GEO pour le lieu d'utilisation";
+"Last Change" = "Dernier changement";
+"Counter" = "Compteur";
+"Save Adjust" = "Enregistrer la configuration";
+"Scale Reset" = "Réinitialiser la balance";
+"Restore Adjust" = "Restaurer la configuration";
+
+/* Settings : Advanced */
+
+"Advanced" = "Configuration réseau";
+"AP" = "AP";
+"SSID as access point" = "SSID comme point d'accès";
+"Password" = "Mot de passe";
+"IP base address" = "Adresse IP de base";
+"Access Point" = "Point d'accès";
+"Network  SSID" = "Network  SSID";
+"Network Password" = "Mot de passe réseau";
+"Network IP address" = "Adresse IP réseau";
+"Network DHCP" = "DHCP réseau";
+"TCP Server port" = "Port TCP";
+"UDP remote port (PC side)" = "Port UDP (côté PC)";
+"UDP local port (XTREM side)" = "Port local UDP (côté XTREM)";
+"Reset network with current settings" = "Réinitialiser le réseau avec les paramètres actuels";
+
+"Send URL" = "URL d'envoi";
+
+/* Settings Printer more */
+
+"Printing" = "Impression";
+"Left Margin" = "Marge de gauche";
+"Barcode Type" = "Type de code à barres";
+"Printer Width" = "Largeur d'impression";
+"Serial Printer Speed" = "Vitesse de l'imprimante série";
+"Import Label" = "Import Label";
+
+
+

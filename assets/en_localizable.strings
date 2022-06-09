@@ -24,8 +24,8 @@
 "Net Weight" = "Net Weight";
 /*GRAMModel.swift "Tare"*/
 "Tare" = "Tare";
-/*GRAMModel.swift "Gross Weight"*/
-"Gross Weight" = "Gross Weight";
+/*GRAMModel.swift "Gross"*/
+"Gross Weight" = "Gross";
 /*GRAMModel.swift "No Error"*/
 "No Error" = "No Error";
 /*GRAMModel.swift "Error 01"*/
@@ -290,22 +290,22 @@ SetupViewController.swift "Enter SSID"*/
 "Range 2" = "Range 2";
 "Max" = "Max";
 "e" = "e";
-"Current A/D cts" = "Current A/D cts";
+"Current A/D cts" = "A/D cts";
 "Initial Zero" = "Initial Zero";
 "Adjust Zero" = "Adjust Zero";
 "Slope Divisor" = "Slope Divisor";
 "Adjust Span" = "Adjust Span";
-"GEO code adjustment" = "GEO code adjustment";
+"GEO code adjustment" = "GEO code place of calibration";
 "GEO code place of use" = "GEO code place of use";
 "Last Change" = "Last Change";
 "Counter" = "Counter";
-"Save Adjust" = "Save Adjust";
+"Save Adjust" = "Save calibration";
 "Scale Reset" = "Scale Reset";
-"Restore Adjust" = "Restore Adjust";
+"Restore Adjust" = "Restore calibration";
 
 /* Settings : Advanced */
 
-"Advanced" = "Advanced";
+"Advanced" = "Network settings";
 "AP" = "AP";
 "SSID as access point" = "SSID as access point";
 "Password" = "Password";

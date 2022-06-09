@@ -8,41 +8,41 @@
 "Yes" = "Sì";
 "No" = "No";
 "OK" = "OK";
-"Cancel" = "Annulla";
-"Enter Tare Name" = "Inserisci nome tara";
+"Cancel" = "Annullare";
+"Enter Tare Name" = "Inserire il nome della tara";
 "User" = "Utente";
 "Customer" = "Cliente";
 "Number" = "Numero";
 "Date" = "Data";
 "Time" = "Ora";
-"Item" = "Item";
+"Item" = "Articolo";
 "Net Weight" = "Peso netto";
 "Tare" = "Tara";
 "Gross Weight" = "Peso lordo";
 "<User>" = "<Utente>";
 "<Customer>" = "<Cliente>";
-"<Code>" = "<Code>";
-"Protected by Sealing Switch" = "Protetto da interruttore di tenuta";
-"Read Only Record" = "Record di sola lettura";
-"Incorrect value / Out of range" = "Valore errato / Fuori portata";
+"<Code>" = "<Prodotto>";
+"Protected by Sealing Switch" = "Protetto da interruttore antimanomissione";
+"Read Only Record" = "Registro di sola lettura";
+"Incorrect value / Out of range" = "Valore errato / Fuori gamma";
 "Unknown error value" = "Valore di errore sconosciuto";
 "Error \(dataSent[0])" = "Errore \ (dataSent [0])";
-"Deleting records" = "Eliminazione di record";
-"Are you sure you want to delete ALL records?" = "Sei sicuro di voler eliminare TUTTI i record?";
+"Deleting records" = "Cancellare i record";
+"Are you sure you want to delete ALL records?" = "È sicuro di voler eliminare tutti i record?";
 "Error \(error) while trying to delete \(url)" = "Errore \ (errore) durante il tentativo di eliminare \ (url)";
-"Delete" = "Elimina";
+"Delete" = "Cancellare";
 "Scanning not supported" = "Scansione non supportata";
-"Your device does not support scanning a code from an item. Please use a device with a camera." = "Il dispositivo non supporta la scansione di un codice da un elemento. Utilizzare un dispositivo con una fotocamera.";
-"Waiting for code" = "In attesa di codice";
-"Enter Code" = "Inserisci codice";
-"Enter SSID" = "Inserisci SSID";
+"Your device does not support scanning a code from an item. Please use a device with a camera." = "Il dispositivo non supporta la scansione del codice di un articolo. Utilizzare un dispositivo con fotocamera.";
+"Waiting for code" = "In attesa del codice";
+"Enter Code" = "Insere il codice";
+"Enter SSID" = "Immettere l'SSID";
 "Enter Password" = "Inserire la password";
 "NetworkViewController.doChangePassword" = "NetworkViewController.doChangePassword";
-"Change Passwd Message" = "Modifica messaggio Passwd";
+"Change Passwd Message" = "Messaggio di modifica della password";
 "SetupkViewController.doChangeSSID" = "SetupkViewController.doChangeSSID";
-"Change SSID Message" = "Cambia messaggio SSID";
+"Change SSID Message" = "Messaggio di modifica della password";
 "Update SSID" = "Aggiorna SSID";
-"Update Password" = "Aggiorna password";
+"Update Password" = "Aggiornare la password";
 "+" = "+";
 "HR" = "HR";
 "Limits" = "Limiti";
@@ -50,31 +50,31 @@
 "→T←" = "→ T ←";
 "→0←" = "→ 0 ←";
 "Scanning not supported" = "Scansione non supportata";
-"Your device does not support scanning a code from an item. Please use a device with a camera." = "Il dispositivo non supporta la scansione di un codice da un elemento. Utilizzare un dispositivo con una fotocamera.";
-"Enter User" = "Inserisci utente";
-"Enter Customer" = "Inserisci cliente";
-"Enter Code" = "Inserisci codice";
+"Your device does not support scanning a code from an item. Please use a device with a camera." = "Il dispositivo non supporta la scansione del codice di un articolo. Utilizzare un dispositivo con fotocamera.";
+"Enter User" = "Inserire l'utente";
+"Enter Customer" = "Inserire il cliente";
+"Enter Code" = "Inserire il codice";
 "Scanner not implemented" = "Scanner non implementato";
 "Please, contact your dealer." = "Si prega di contattare il proprio rivenditore.";
-"Export not implemented" = "Esportazione non implementata";
+"Export not implemented" = "Esportazione non attivata";
 
 /* Added fields from Storyboard */
-"Clear" = "Elimina";
-"Export" = "Esportare";
+"Clear" = "Cancellare";
+"Export" = "Esportazione";
 "Columns" = "colonne";
-"Gross W" = "W lordo";
-"Displayed Fields" = "Campi visualizzati";
+"Gross W" = "Lordo";
+"Displayed Fields" = "Campi visibili";
 "Auto Tare" = "Tara automatica";
 "Tare when stable" = "Tara quando stabile";
 "Tare mode" = "Modalità tara";
-"Zero Tracking device" = "Dispositivo di tracciamento zero";
-"Zero Tracking Rng" = "Zero Tracking Rng";
+"Zero Tracking device" = "Tracciamento dell'auto zero";
+"Zero Tracking Rng" = "Gamma di tracciamento dell'auto zero";
 "Filter Level" = "Livello del filtro";
-"Livestock filter" = "Filtro per bestiame";
+"Livestock filter" = "Filtro per il bestiame";
 "Records no 0" = "Non registra 0";
-"Settings" = "impostazioni";
+"Settings" = "Impostazioni";
 "Name" = "Nome";
-"Passphrase" = "Frase d'accesso";
+"Passphrase" = "Password";
 "IP Address" = "Indirizzo IP";
 "Port" = "Porta";
 "Network SSID" = "SSID di rete";
@@ -83,102 +83,132 @@
 "Label" = "Etichetta";
 "Connected" = "Collegato";
 "Scanning" = "Scansione";
-"Connect to Printer" = "Connetti alla stampante";
+"Connect to Printer" = "Collegare la stampante";
 
-"Enter Scale Name" = "Inserisci nome scala";
-"Enter Network Name" = "Inserisci nome rete";
-"Enter Network Password" = "Inserisci password di rete"
-"Enter Network IP" = "Inserisci IP di rete";
+"Enter Scale Name" = "Nome della bilancia";
+"Enter Network Name" = "Nome della rete";
+"Enter Network Password" = "Password di rete"
+"Enter Network IP" = "IP di rete";
 "Net SSID" = "SSID rete";
-"Net DHCP" = "DHCP rete;
-"Net IP" = "IP rete";
+"Net DHCP" = "Rete DHCP";
+"Net IP" = "Rete IP";
 
-"Import Label" = "Import Label";
-"Permission was not granted" = "Permission was not granted";
+"Import Label" = "Etichetta di importazione";
+"Permission was not granted" = "Autorizzazione negata";
 "Import Label " = "Import Label ";
-"Select Label" = "SSelect Label";
-"Users" = "Users";
-"Customers = "Customers";
-"Products" = "Products";
-"Refresh" = "Refresh";
-"Printer Name" = "Printer name";
-"Protocol" = "Protocol";
-"Current Label" = "Current Label";
-"Configure" = "Configure";
-"Disconnected" = "Disconnected";
-"Connecting" = "Connecting";
-"Disconnecting" = "Disconnecting";
-"Looking for services" = "Looking for services";
-"Checking device type" = "Checking device type";
+"Select Label" = "Selezionare l'etichetta";
+"Users" = "Utenti";
+"Customers = "Clienti";
+"Products" = "Prodotti";
+"Refresh" = "Aggiornamento";
+"Printer Name" = "Nome della stampante";
+"Protocol" = "Protocollo";
+"Current Label" = "Etichetta attuale";
+"Configure" = "Configurare";
+"Disconnected" = "Disconnesso";
+"Connecting" = "Collegamento";
+"Disconnecting" = "Disconnessione";
+"Looking for services" = "Alla ricerca di servizi";
+"Checking device type" = "Dispositivo di controllo";
 
 /* Settings : Titles */
 
-"General" = "General";
-"Zero Options" = "Zero Options";
-"Tare Options" = "Tare Options";
-"Filter Options" = "Filter Options";
-"COM port" = "COM port";
-"Scale Definition" = "Scale Definition";
-"Printer" = "Printer";
-"Databases" = "Databases";
-"About App" = "About App";
+"General" = "Generale";
+"Zero Options" = "Optioni azzeramento";
+"Tare Options" = "Opzioni di tara";
+"Filter Options" = "Opzioni di filtraggio";
+"COM port" = "Porta COM";
+"Scale Definition" = "Impostazione bilancia";
+"Printer" = "Stampante";
+"Databases" = "Banche dati";
+"About App" = "Informazione sull'applicazione";
 
 /* Settings : General  */
 
-"Name" = "Name";
-"Serial Number" = "Serial Number";
-"Device Id" = "Device Id";
-"Type" = "Type";
-"Software Version" = "Software Version";
-"Optional Board" = "Optional Board";
-"Sealing Switch" = "Sealing Switch";
+"Name" = "Nome";
+"Serial Number" = "Numero di serie";
+"Device Id" = "Id dispositivo";
+"Type" = "Tipo";
+"Software Version" = "Versione Software";
+"Optional Board" = "Carte opzionali";
+"Sealing Switch" = "Sigillo";
 
 /* Settings : Zero Options  */
-"Initial Zero Setting" = "Initial Zero Setting";
-"Initial Zero Range" = "Initial Zero Range";
-"Zero Tracking Device" = "Zero Tracking Device";
-"Zero Tracking Range" = "Zero Tracking Range";
+"Initial Zero Setting" = "Azzeramento Iniziale";
+"Initial Zero Range" = "Gamma di azzeramento iniziale";
+"Zero Tracking Device" = "Tracciamento dell'auto zero";
+"Zero Tracking Range" = "Gamma di tracciamento dell'auto zero";
 
 /* Settings : Tare Options  */
 
-"Auto Tare" = "Auto Tare";
-"Tare when stable" = "Tare when stable";
-"Tare mode" = "Tare mode";
+"Auto Tare" = "Tara Automatica";
+"Tare when stable" = "Tara se stabile";
+"Tare mode" = "Modalità tara";
 
 /* Settings : Filter Options  */
 
 "Filter Level" = "Filter Level";
 "Livestock filter" = "Livestock filter";
-"Motion filter" = "Motion filter";
-"Stability range" = "Stability range";
-"Output rate (ms)" = "Output rate (ms)";
-"Weighing AD/C speed)" = "Weighing AD/C speed";
+"Motion filter" = "Filtro di movimento";
+"Stability range" = "Intervallo di stabilità";
+"Output rate (ms)" = "Velocità di uscita (ms)";
+"Weighing AD/C speed)" = "Velocità di pesatura AD/C";
 
 /* Settings : COM port  */
-"COM port" = "COM port";
+"COM port" = "Porta COM";
 
 /* Settings : Scale definition   */
 
-"Allow negative settings" = "Allow negative settings";
-"Weighing unit" = "Weighing unit";
-"Decimal places" = "Decimal places";
-"Range mode" = "Range mode";
-"Single range" = "Single range";
-"2 ranges" = "2 ranges";
-"2 intervals" = "2 intervals";
-"Range 1" = "Range 1";
-"Range 2" = "Range 2";
-"Max" = "Max";
+"Allow negative settings" = "Consentire il peso negativo";
+"Weighing unit" = "Unità della pesata";
+"Decimal places" = "Decimali";
+"Range mode" = "Modalità Range";
+"Single range" = "Gamma singola";
+"2 ranges" = "Gamma duplice";
+"2 intervals" = "2 Scale";
+"Range 1" = "Gamma 1";
+"Range 2" = "Gamma 2";
+"Max" = "Capacità";
 "e" = "e";
-"Current A/D cts" = "Current A/D cts";
-"Initial Zero" = "Initial Zero";
-"Adjust Zero" = "Adjust Zero";
+"Current A/D cts" = "A/D cts";
+"Initial Zero" = "0 Iniziale";
+"Adjust Zero" = "Taratura dello zero";
 "Slope Divisor" = "Slope Divisor";
-"Adjust Span" = "Adjust Span";
-"GEO code adjustment" = "GEO code adjustment";
-"GEO code place of use" = "GEO code place of use";
-"Last Change" = "Last Change";
-"Counter" = "Counter";
-"Save Adjust" = "Save Adjust";
-"Scale Reset" = "Scale Reset";
-"Restore Adjust" = "Restore Adjust";
+"Adjust Span" = "Taratura di portata";
+"GEO code adjustment" = "Codice GEO luogo di ambientazione";
+"GEO code place of use" = "Codice GEO luogo di utilizzo";
+"Last Change" = "Ultimo cambiamento";
+"Counter" = "Contatore";
+"Save Adjust" = "Salva le impostazioni";
+"Scale Reset" = "Reset della bilancia";
+"Restore Adjust" = "Recuperare le impostazioni";
+
+/* Settings : Advanced */
+
+"Advanced" = "Impostazione della rete";
+"AP" = "AP";
+"SSID as access point" = "SSID come punto di accesso";
+"Password" = "Password";
+"IP base address" = "Indirizzo IP di base";
+"Access Point" = "Punto di accesso";
+"Network  SSID" = "Network  SSID";
+"Network Password" = "Password di rete";
+"Network IP address" = "Indirizzo IP di rete";
+"Network DHCP" = "Rete DHCP";
+"TCP Server port" = "Porta TCP";
+"UDP remote port (PC side)" = "Porta UDP remota (lato PC)";
+"UDP local port (XTREM side)" = "Porta UDP locale (lato Xtrem)";
+"Reset network with current settings" = "Riavviare la rete con i valori attuali";
+
+"Send URL" = "URL di spedizione";
+
+
+/* Settings Printer more */
+
+"Printing" = "Stampa";
+"Left Margin" = "Margine sinistro";
+"Barcode Type" = "Tipo di codice a barre";
+"Printer Width" = "Larghezza della stampante";
+"Serial Printer Speed" = "Velocità della stampante seriale";
+"Import Label" = "Import Label";
+

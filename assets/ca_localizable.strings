@@ -24,7 +24,7 @@ GRAMModel.swift "User"*/
 /*GRAMModel.swift "Tare"*/
 "Tare" = "Tara";
 /*GRAMModel.swift "Gross Weight"*/
-"Gross Weight" = "Pes Brut";
+"Gross Weight" = "Brut";
 /*GRAMModel.swift "No Error"*/
 "No Error" = "No Error";
 /*GRAMModel.swift "Error 01"*/
@@ -66,7 +66,7 @@ GRAMModel.swift "User"*/
 "Changing Network Password" = "Changing Network Password";
 
 /*Protocol/GRAMMessage.swift  "Protected by Sealing Switch"*/
-"Protected by Sealing Switch" = "Protegit per el segell";
+"Protected by Sealing Switch" = "Protegit pel precinte";
 /*Protocol/GRAMMessage.swift  "Read Only Record"*/
 "Read Only Record" = "Reggistre tan sols de lectura";
 /*Protocol/GRAMMessage.swift  "Incorrect value / Out of range"*/
@@ -106,13 +106,13 @@ ScaleDatabaseViewController.swift "Error, path inexistent"*/
 
 /*
 ScannerViewController.swift "Scanning not supported"*/
-"Scanning not supported" = "Scanning no està soportat";
+"Scanning not supported" = "Escaneig no soportat";
 /*ScannerViewController.swift "Your device does not support scanning a code from an item. Please use a device with a camera."*/
 "Your device does not support scanning a code from an item. Please use a device with a camera." = "Comprova que el dispositiu tingui cámara i els permisos estiguin donats.";
 /*ScannerViewController.swift "Waiting for code"*/
 "Waiting for code" = "Esperant codi";
 /*ScannerViewController.swift "Enter Code"*/
-"Enter Code" = "Entreu codi";
+"Enter Code" = "Entreu el codi";
 /*
 SetupViewController.swift "Switching Auto tare to \(s.isOn)"*/
 "Switching Auto tare to \(s.isOn)" = "Switching Auto tare to \(s.isOn)";
@@ -168,7 +168,7 @@ SetupViewController.swift "Enter SSID"*/
 "Enter Code" = "Entreu codi";
 /*ViewController.swift "showLogsSegue"*/
 "showLogsSegue" = "showLogsSegue";
-"Scanner not implemented" = "Scanner pendent d'activació";
+"Scanner not implemented" = "Escàner pendent d'activació";
 "Please, contact your dealer." = "Si us plau, contacteu el vostre distribuidor.";
 "Export not implemented" = "Exportació pendent d'activació.";
 
@@ -194,7 +194,7 @@ SetupViewController.swift "Enter SSID"*/
 
 /* More fields for printer */
 "Label" = "Etiqueta";
-"Scanning" = "Scanning";
+"Scanning" = "Escanejant";
 "Connect to Printer" = "Connecteu-vos a la impressora";
 
 "Connected" = "Connectat";
@@ -220,9 +220,9 @@ SetupViewController.swift "Enter SSID"*/
 "Protocol" = "Protocol";
 "Current Label" = "Etiqueta actual";
 "Configure" = "Configurar";
-"Disconnected" = "Desconectat";
-"Connecting" = "Conectant";
-"Disconnecting" = "Desconectant";
+"Disconnected" = "Desconnectat";
+"Connecting" = "Connectant";
+"Disconnecting" = "Desconnectant";
 "Looking for services" = "Cercant serveis";
 "Checking device type" = "Comprovant dispositiu";
 
@@ -244,12 +244,12 @@ SetupViewController.swift "Enter SSID"*/
 "Serial Number" = "Número de Sèrie";
 "Device Id" = "Id dispositiu";
 "Type" = "Tipus";
-"Software Version" = "Versi-o programari";
+"Software Version" = "Versió programari";
 "Optional Board" = "Tarja opcional";
-"Sealing Switch" = "Segellat";
+"Sealing Switch" = "Precinte";
 
 /* Settings : Zero Options  */
-"Initial Zero Setting" = "Ajust inicial del 0";
+"Initial Zero Setting" = "Posada a 0 inicial";
 "Initial Zero Range" = "Rang del 0 inicial";
 "Zero Tracking Device" = "Dispositiu de Seguiment del 0";
 "Zero Tracking Range" = "Rang del seguiment del 0";
@@ -263,7 +263,7 @@ SetupViewController.swift "Enter SSID"*/
 /* Settings : Filter Options  */
 
 "Filter Level" = "Nivell filtre";
-"Livestock filter" = "Filtre de pesada d'animals";
+"Livestock filter" = "Pesatge d'animals";
 "Motion filter" = "Filtre de Moviment";
 "Stability range" = "Rang d'estabilitat";
 "Output rate (ms)" = "Ritme de sortida (ms)";
@@ -280,17 +280,17 @@ SetupViewController.swift "Enter SSID"*/
 "Range mode" = "Mode de Rangs";
 "Single range" = "Rang Únic";
 "2 ranges" = "2 rangs";
-"2 intervals" = "2 intervals";
+"2 intervals" = "2 esglaons";
 "Range 1" = "Rang 1";
 "Range 2" = "Rang 2";
 "Max" = "Max";
 "e" = "e";
-"Current A/D cts" = "Corrent A/D cts";
+"Current A/D cts" = "A/D cts";
 "Initial Zero" = "0 Inicial";
 "Adjust Zero" = "Ajustar 0";
 "Slope Divisor" = "Divisor de Pendent";
-"Adjust Span" = "Ajustar Gama";
-"GEO code adjustment" = "Ajust del codi GEOI";
+"Adjust Span" = "Ajust fons d'escala";
+"GEO code adjustment" = "Codi GEO del lloc d'ajust";
 "GEO code place of use" = "Codi GEO del lloc d'us";
 "Last Change" = "Últim Canvi";
 "Counter" = "Comptador";
@@ -300,7 +300,7 @@ SetupViewController.swift "Enter SSID"*/
 
 /* Settings : Advanced */
 
-"Advanced" = "Avançat";
+"Advanced" = "Configuració LAN";
 "AP" = "AP";
 "SSID as access point" = "SSID com a punt d'accés";
 "Password" = "Contrasenya";
@@ -313,7 +313,7 @@ SetupViewController.swift "Enter SSID"*/
 "TCP Server port" = "Port TCP servidor";
 "UDP remote port (PC side)" = "Port UDP remot (costat PC)";
 "UDP local port (XTREM side)" = "Port UDP local (costat XTREM)";
-"Reset network with current settings" = "RReiniciar xarxa amb els valors actuals";
+"Reset network with current settings" = "Reiniciar xarxa amb els valors actuals";
 
 "Send URL" = "URL enviament";
 

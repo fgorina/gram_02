@@ -383,6 +383,10 @@ class GRAMModel {
 
     didReceiveData();
 
+    urlUsers = "file://" + await dataPath() + "/users.csv";
+     urlProducts = "file://" + await dataPath() + "/products.csv";
+     urlCustomers = "file://" + await dataPath() + "/customers.csv";
+
 
   }
 
@@ -426,7 +430,7 @@ class GRAMModel {
 
   }
   Future<String> getPackageCodePath() async{
-    return (await DeviceApps.getApp("es.gorina.gram_01")).apkFilePath;
+    return (await DeviceApps.getApp("es.gorina.gram_02")).apkFilePath;
 
   }
   Future<String> getApkHash() async {
@@ -714,7 +718,7 @@ class GRAMModel {
     await printer.writeString("\n");
 
     String sl = justifyRight(dateString(record.when) + " " + shortTimeString(record.when) , ll, " ");
-    String sr = justifyLeft(justifyRight(record.scale, 08, " ") + "|N:" + justifyLeft(sprintf("%d", [counter]), 5, '0'), lr, " ");
+    String sr = justifyRight("N:" + justifyLeft(sprintf("%d", [counter]), 5, '0'), lr, " ");
 
     await printer.writeString(sMargin + sl + "|" + sr + "\n");
 
@@ -742,7 +746,7 @@ class GRAMModel {
     sl = justifyRight("Brut: "+ record.grossWeight.valueFormatted(decimalPointPosition, grouping: false) + " " + nWeight.symbol(), ll, " ");
     sr = justifyLeft( " Tare: " + record.tare.valueFormatted(decimalPointPosition, grouping: false)+ " " + nWeight.symbol(), lr, " ");
 
-    await printer.writeString(sMargin + sl +  "|" + sr + "\n");
+    await printer.writeString(sMargin + sl +  " " + sr + "\n");
     await printer.writeString(sMargin + justifyRight("_", printerWidth - leftMargin, "_")    + "\n\n");
 
     if (_codeBarcode.isNotEmpty){
@@ -1617,7 +1621,7 @@ class GRAMModel {
           if (index >= 1 && index <= 4) {
             Log.shared.trace("GRAMConnection.processMessage",
                 "Scale Unit ${message.dataSent} : $index");
-            //scaleUnit = unitsCodes[index];
+                scaleUnit = unitsCodes[index];
             stateUpdated = true;
 
           } else {

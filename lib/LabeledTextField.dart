@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:gram_01/GRAMMessage.dart';
+import 'GRAMMessage.dart';
 import 'ColorCompatibility.dart';
 import 'GenericVisorField.dart';
 

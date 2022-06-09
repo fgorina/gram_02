@@ -1,21 +1,21 @@
 "Yes" = "Ja";
 "No" = "Nein";
-"OK" = "OKAY";
+"OK" = "OK";
 "Cancel" = "Stornieren";
 "Enter Tare Name" = "Taranamen eingeben";
 "User" = "Benutzer";
 "Customer" = "Kunde";
 "Number" = "Nummer";
 "Date" = "Datum";
-"Time" = "Zeit";
+"Time" = "Uhrzeit";
 "Item" = "Artikel";
 "Net Weight" = "Nettogewicht";
 "Tare" = "Tara";
-"Gross Weight" = "Bruttogewicht";
-"<User>" = "<User>";
+"Gross Weight" = "Brutto";
+"<User>" = "<Benutzer>";
 "<Customer>" = "<Kunde>";
 "<Code>" = "<Produkt>";
-"Protected by Sealing Switch" = "Geschützt durch Dichtungsschalter";
+"Protected by Sealing Switch" = "geschützt";
 "Read Only Record" = "Schreibgeschützter Datensatz";
 "Incorrect value / Out of range" = "Falscher Wert / außerhalb des Bereichs";
 "Unknown error value" = "Unbekannter Fehlerwert";
@@ -49,7 +49,7 @@
 "Enter Code" = "Code eingeben";
 "Scanner not implemented" = "Scanner nicht implementiert";
 "Please, contact your dealer." = "Bitte wenden Sie sich an Ihren Händler.";
-"Export not implemented" = "Export nicht implementiert";
+"Export not implemented" = "Export nicht möglich";
 
 /* Added fields from Storyboard */
 "Clear" = "Löschen";
@@ -57,15 +57,15 @@
 "Columns" = "Säulen";
 "Gross W" = "Gross W";
 "Displayed Fields" = "Angezeigte Felder";
-"Auto Tare" = "Auto-Tara";
+"Auto Tare" = "Auto Tara";
 "Tare when stable" = "Im stabilen Zustand tarieren";
 "Tare mode" = "Tara-Modus";
 "Zero Tracking device" = "Zero Tracking Gerät";
 "Zero Tracking Rng" = "Zero Tracking Rng";
-"Filter Level" = "Filterstufe";
-"Livestock filter" = "Viehfilter";
+"Filter Level" = "Filterbene";
+"Livestock filter" = "Filter für dyn. Wägungen";
 "Records no 0" = "Zeichnet keine 0 auf";
-"Settings" = "die Einstellungen";
+"Settings" = "Einstellung";
 "Name" = "Name";
 "Passphrase" = "Passphrase";
 "IP Address" = "IP Adresse";
@@ -75,104 +75,138 @@
 * More fields for printer */
 "Label" = "Etikett";
 "Connected" = "mit Drucker verbunden";
-"Scanning" = "Scanning";
-"Connect to Printer" = "Drucker verbinden";
+"Scanning" = "scannen";
+"Connect to Printer" = "mit Drucker verbinden";
 
-"Enter Scale Name" = "Enter Scale Name";
-"Enter Network Name" = "Enter Network Name";
-"Enter Network Password" = "Enter Network Password"
+"Enter Scale Name" = "Waagenname";
+"Enter Network Name" = "Netzwerkname";
+"Enter Network Password" = "W-LAN passwort"
 "Enter Network IP" = "Enter Network IP";
 "Net SSID" = "Net SSID";
-"Net DHCP" = "Net DHCP;
+"Net DHCP" = "DHCP;
 "Net IP" = "Net IP";
 
-"Import Label" = "Import Label";
-"Permission was not granted" = "Permission was not granted";
+"Import Label" = "Etikettenvorlage import";
+"Permission was not granted" = "Zugang nicht genehmigt";
 "Import Label " = "Import Label ";
-"Select Label" = "SSelect Label";
-"Users" = "Users";
-"Customers = "Customers";
-"Products" = "Products";
-"Refresh" = "Refresh";
-"Printer Name" = "Printer name";
-"Protocol" = "Protocol";
-"Current Label" = "Current Label";
-"Configure" = "Configure";
-"Disconnected" = "Disconnected";
-"Connecting" = "Connecting";
-"Disconnecting" = "Disconnecting";
-"Looking for services" = "Looking for services";
-"Checking device type" = "Checking device type";
+"Select Label" = "Etikett auswählen";
+"Users" = "Benutzer";
+"Customers = "Kunde";
+"Products" = "Produkt";
+"Refresh" = "aktualisieren";
+"Printer Name" = "Druckername";
+"Protocol" = "Protokolltyp";
+"Current Label" = "Aktuelles Etikett";
+"Configure" = "Konfigurieren";
+"Disconnected" = "Getrennt";
+"Connecting" = "verbinden";
+"Disconnecting" = "Trennen";
+"Looking for services" = "Servicesuche";
+"Checking device type" = "Überprüfung des Gerätetyps";
 
 
 /* Settings : Titles */
 
-"General" = "General";
-"Zero Options" = "Zero Options";
-"Tare Options" = "Tare Options";
-"Filter Options" = "Filter Options";
+"General" = "Allgemeines";
+"Zero Options" = "Optionen der Nulleinstellung";
+"Tare Options" = "Tara-Optionen";
+"Filter Options" = "Filteroptionen";
 "COM port" = "COM port";
-"Scale Definition" = "Scale Definition";
-"Printer" = "Printer";
+"Scale Definition" = "Konfigurationsmenü";
+"Printer" = "Drucker";
 "Databases" = "Databases";
-"About App" = "About App";
+"About App" = "über die App";
 
 /* Settings : General  */
 
 "Name" = "Name";
-"Serial Number" = "Serial Number";
-"Device Id" = "Device Id";
-"Type" = "Type";
-"Software Version" = "Software Version";
-"Optional Board" = "Optional Board";
-"Sealing Switch" = "Sealing Switch";
+"Serial Number" = "Seriennummer";
+"Device Id" = "Geräte ID";
+"Type" = "Typ";
+"Software Version" = "Softwareversion";
+"Optional Board" = "optionale Platine";
+"Sealing Switch" = "Versiegelung";
 
 /* Settings : Zero Options  */
-"Initial Zero Setting" = "Initial Zero Setting";
-"Initial Zero Range" = "Initial Zero Range";
-"Zero Tracking Device" = "Zero Tracking Device";
-"Zero Tracking Range" = "Zero Tracking Range";
+"Initial Zero Setting" = "Initalizierung";
+"Initial Zero Range" = "Nullbereich";
+"Zero Tracking Device" = "Nullpunktnachführung";
+"Zero Tracking Range" = "Bereich der Nullanzeige";
 
 /* Settings : Tare Options  */
 
-"Auto Tare" = "Auto Tare";
-"Tare when stable" = "Tare when stable";
-"Tare mode" = "Tare mode";
+"Auto Tare" = "Auto Tara";
+"Tare when stable" = "Nur bei Stabilität tarieren";
+"Tare mode" = "Tara-Modus";
 
 /* Settings : Filter Options  */
 
 "Filter Level" = "Filter Level";
 "Livestock filter" = "Livestock filter";
-"Motion filter" = "Motion filter";
-"Stability range" = "Stability range";
-"Output rate (ms)" = "Output rate (ms)";
-"Weighing AD/C speed)" = "Weighing AD/C speed";
+"Motion filter" = "Bewegungsfilter";
+"Stability range" = "Stabilitätsbereich";
+"Output rate (ms)" = "Ausgaberate (ms)";
+"Weighing AD/C speed)" = "Geschwindigkeit des A/D-Wandlers";
 
 /* Settings : COM port  */
 "COM port" = "COM port";
 
 /* Settings : Scale definition   */
 
-"Allow negative settings" = "Allow negative settings";
-"Weighing unit" = "Weighing unit";
+"Allow negative settings" = "negative Werte zulassen";
+"Weighing unit" = "Wiegeeinheit";
 "Decimal places" = "Decimal places";
-"Range mode" = "Range mode";
-"Single range" = "Single range";
-"2 ranges" = "2 ranges";
-"2 intervals" = "2 intervals";
-"Range 1" = "Range 1";
-"Range 2" = "Range 2";
+"Range mode" = "Bereich";
+"Single range" = "Einzel-Bereich";
+"2 ranges" = "2 Bereiche";
+"2 intervals" = "2 Intervalle";
+"Range 1" = "Bereich 1";
+"Range 2" = "Bereich 2";
 "Max" = "Max";
 "e" = "e";
-"Current A/D cts" = "Current A/D cts";
-"Initial Zero" = "Initial Zero";
-"Adjust Zero" = "Adjust Zero";
-"Slope Divisor" = "Slope Divisor";
-"Adjust Span" = "Adjust Span";
-"GEO code adjustment" = "GEO code adjustment";
-"GEO code place of use" = "GEO code place of use";
-"Last Change" = "Last Change";
-"Counter" = "Counter";
-"Save Adjust" = "Save Adjust";
-"Scale Reset" = "Scale Reset";
-"Restore Adjust" = "Restore Adjust";
+"Current A/D cts" = "A/D cts";
+"Initial Zero" = "Null";
+"Adjust Zero" = "Nullkalibrierung";
+"Slope Divisor" = "Steigung";
+"Adjust Span" = "Spannweite einstellen";
+"GEO code adjustment" = "GEO-Faktor für den Kalibrierort";
+"GEO code place of use" = "GEO-Faktor, der dem Standort der Waage entspricht";
+"Last Change" = "Letzte Bearbeitung";
+"Counter" = "Zähler";
+"Save Adjust" = "Einstellungen speichern";
+"Scale Reset" = "Reset";
+"Restore Adjust" = "Einstellung wiederherstellen";
+
+/* Settings : Advanced */
+
+"Advanced" = "Netzwerk";
+"AP" = "AP";
+"SSID as access point" = "WLAN-Zugangspunkt SSID";
+"Password" = "Password";
+"IP base address" = "IP base address";
+"Access Point" = "WLAN-Zugangspunkt";
+"Network  SSID" = "W-LAN SSID";
+"Network Password" = "W-LAN Passwort";
+"Network IP address" = "IP-Addresse";
+"Network DHCP" = "Network DHCP";
+"TCP Server port" = "Port TCP";
+"UDP remote port (PC side)" = "UDP-Port (PC)";
+"UDP local port (XTREM side)" = "UDP-Port (Xtrem)";
+"Reset network with current settings" = "Neustart mit aktuellen Parametern";
+
+"Send URL" = "URL senden";
+
+
+/* Settings Printer more */
+
+"Printing" = "Drucken";
+"Left Margin" = "Linker Rand";
+"Barcode Type" = "Barcode Type";
+"Printer Width" = "Papierbreite";
+"Serial Printer Speed" = "Baudrate Drucker";
+"Import Label" = "Import Label";
+
+
+
+
+

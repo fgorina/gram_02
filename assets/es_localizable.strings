@@ -15,14 +15,14 @@
 "Number" = "Número";
 "Date" = "Fecha";
 "Time" = "Hora";
-"Item" = "Articulo";
+"Item" = "Artículo";
 "Net Weight" = "Peso neto";
 "Tare" = "Tara";
-"Gross Weight" = "Peso bruto";
+"Gross Weight" = "Bruto";
 "<User>" = "<Usuario>";
 "<Customer>" = "<Cliente>";
 "<Code>" = "<Código>";
-"Protected by Sealing Switch" = "Protegido por el interruptor de sellado";
+"Protected by Sealing Switch" = "Protegido por el interruptor de precinto";
 "Read Only Record" = "Registro de solo lectura";
 "Incorrect value / Out of range" = "Valor incorrecto / Fuera de rango";
 "Unknown error value" = "Valor de error desconocido";
@@ -32,7 +32,7 @@
 "Error \(error) while trying to delete \(url)" = "Error \ (error) al intentar eliminar \ (url)";
 "Delete" = "Eliminar";
 "Scanning not supported" = "Escaneo no compatible";
-"Your device does not support scanning a code from an item. Please use a device with a camera." = "Su dispositivo no admite el escaneo de un código de un elemento. Utilice un dispositivo con una cámara.";
+"Your device does not support scanning a code from an item. Please use a device with a camera." = "Su dispositivo no admite el escaneo del código de artículo. Utilice un dispositivo con una cámara.";
 "Waiting for code" = "Esperando código";
 "Enter Code" = "Introduzca el código";
 "Enter SSID" = "Entrar SSID";
@@ -50,13 +50,13 @@
 "→T←" = "→ T ←";
 "→0←" = "→ 0 ←";
 "Scanning not supported" = "Escaneo no compatible";
-"Your device does not support scanning a code from an item. Please use a device with a camera." = "Su dispositivo no admite el escaneo de un código de un elemento. Utilice un dispositivo con una cámara.";
+"Your device does not support scanning a code from an item. Please use a device with a camera." = "Su dispositivo no admite el escaneo del código de artículo. Utilice un dispositivo con una cámara.";
 "Enter User" = "Entrar usuario";
 "Enter Customer" = "Entrar cliente";
 "Enter Code" = "Entrar el código";
 "Scanner not implemented" = "Escáner no implementado";
 "Please, contact your dealer." = "Por favor, contacte a su distribuidor.";
-"Export not implemented" = "Exportación no implementada";
+"Export not implemented" = "Exportación no activada";
 
 /* Added fields from Storyboard */
 "Clear" = "Borrar";
@@ -75,8 +75,8 @@
 
 /* More fields for printer */
 "Label" = "Etiqueta";
-"Connected" = "Conectat";
-"Scanning" = "Scanning";
+"Connected" = "Conectado";
+"Scanning" = "Escaneando";
 "Connect to Printer" = "Conectar la impresora ";
 
 "Enter Scale Name" = "Nombre de la balanza";
@@ -87,7 +87,7 @@
 "Net DHCP" = "DHCP Red;
 "Net IP" = "IP Red";
 
-"Import Label" = "Importar Etiqueta";
+"Import Label" = "Importar etiqueta";
 "Permission was not granted" = "Autoritzación denegada";
 "Import a label " = "Importa etiqueta ";
 "Select Label" = "Selecciona Etiqueta";
@@ -121,15 +121,15 @@
 /* Settings : General  */
 
 "Name" = "Nombre";
-"Serial Number" = "Número de Série";
+"Serial Number" = "Número de Serie";
 "Device Id" = "Id Dispositivo";
 "Type" = "Tipo";
 "Software Version" = "Versión Software";
 "Optional Board" = "Tarjetas Opcionales";
-"Sealing Switch" = "Sellado";
+"Sealing Switch" = "Precinto";
 
 /* Settings : Zero Options  */
-"Initial Zero Setting" = "Ajuste del 0 Inicial";
+"Initial Zero Setting" = "Puesta a 0 Inicial";
 "Initial Zero Range" = "Rango del 0 Inicial";
 "Zero Tracking device" = "Dispositivo de seg. 0";
 "Zero Tracking Rng" = "Rango de seg. 0";
@@ -143,7 +143,7 @@
 /* Settings : Filter Options  */
 
 "Filter Level" = "Nivel de filtro";
-"Livestock filter" = "Filtro de ganado";
+"Livestock filter" = "Filtro para ganado";
 "Motion filter" = "Filtro de Movimiento";
 "Stability range" = "Rango de estabilidad";
 "Output rate (ms)" = "Ritmo de salida (ms)";
@@ -154,23 +154,23 @@
 
 /* Settings : Scale definition   */
 
-"Allow negative settings" = "Permitir pero negativos";
-"Weighing unit" = "Unidad de pesada";
+"Allow negative settings" = "Permitir peso negativo";
+"Weighing unit" = "Unidad de peso";
 "Decimal places" = "Posiciones decimales";
 "Range mode" = "Modo de Rango";
 "Single range" = "Rango único";
 "2 ranges" = "2 rangos";
-"2 intervals" = "2 intérvalos";
+"2 intervals" = "2 escalones";
 "Range 1" = "Rango 1";
 "Range 2" = "Rango 2";
 "Max" = "Max";
 "e" = "e";
-"Current A/D cts" = "A/D cts Corriente";
+"Current A/D cts" = "A/D cts";
 "Initial Zero" = "0 Inicial";
 "Adjust Zero" = "Ajustar 0";
 "Slope Divisor" = "Divisor Pendiente";
 "Adjust Span" = "Ajustar Escala";
-"GEO code adjustment" = "Ajuste código GEO";
+"GEO code adjustment" = "Código GEO lugar de ajuste;
 "GEO code place of use" = "Código GEO lugar de uso";
 "Last Change" = "Ultimo Cambio";
 "Counter" = "Contador";
@@ -180,7 +180,7 @@
 
 /* Settings : Advanced */
 
-"Advanced" = "Avanzado";
+"Advanced" = "Configuración LAN";
 "AP" = "AP";
 "SSID as access point" = "SSID como punto de acceso";
 "Password" = "Contraseña";
@@ -192,7 +192,7 @@
 "Network DHCP" = "DHCP red";
 "TCP Server port" = "Puerto TCP servidor";
 "UDP remote port (PC side)" = "Puerto remoto UDP (lado PC)";
-"UDP local port (XTREM side)" = "Puerto local UDPt (lado Xtrem)";
+"UDP local port (XTREM side)" = "Puerto local UDP (lado Xtrem)";
 "Reset network with current settings" = "Reiniciar red con los valores actuales";
 
 "Send URL" = "URL de envio";
@@ -201,7 +201,7 @@
 /* Settings Printer more */
 
 "Printing" = "Imprimir";
-"Left Margin" = "Márgen izquierdo";
+"Left Margin" = "Margen izquierdo";
 "Barcode Type" = "Tipo código de barras";
 "Printer Width" = "Ancho impresora";
 "Serial Printer Speed" = "Velocidad impresora serie";
