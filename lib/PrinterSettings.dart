@@ -21,10 +21,16 @@ import 'package:flutter_blue/flutter_blue.dart';
 import "BlueConnection.dart";
 import "SerialPrinterConnection.dart";
 import 'LabeledTextField.dart';
+import 'LabelSelector.dart';
 
 import 'Log.dart';
 
 class PrinterSettings extends StatefulWidget {
+  Function openLabelSelector;
+
+  PrinterSettings(Function f) {
+    this.openLabelSelector = f;
+  }
   _PrinterSettingsState createState() => _PrinterSettingsState();
 }
 
@@ -34,7 +40,19 @@ class _PrinterSettingsState extends State<PrinterSettings> {
 
   List<int> printerWidths = [32, 36, 48, 80];
   List<int> printerSpeeds = [9600, 19200, 38400, 57600, 115200];
-  List<String> barcodes = [ "No Barcode", "UPC A", "UPC E", "EAN13", "EAN8", "Code 39", "2 of 5", "CODABAR", "Code 93", "Code128", 'QR'];
+  List<String> barcodes = [
+    "No Barcode",
+    "UPC A",
+    "UPC E",
+    "EAN13",
+    "EAN8",
+    "Code 39",
+    "2 of 5",
+    "CODABAR",
+    "Code 93",
+    "Code128",
+    'QR'
+  ];
   List<int> margins = [0, 1, 2];
 
   @override
@@ -74,7 +92,11 @@ class _PrinterSettingsState extends State<PrinterSettings> {
     return status.isGranted;
   }
 
-  void selectLabel() async {
+  /* Label Management and selector */
+
+  /* End of label management */
+
+  void selectLabelx() async {
     await Permission.storage.request();
     var path = await labelPath();
     var labelsDir = Directory(path);
@@ -157,15 +179,15 @@ class _PrinterSettingsState extends State<PrinterSettings> {
     }
   }
 
-  void dummy(String s){
-
-  }
+  void dummy(String s) {}
   void setSpeed(int value) {
     setState(() {
       model.serialPrinterSpeed = value;
       try {
-         model.aprinter.connect(model.printerName, dummy,);
-
+        model.aprinter.connect(
+          model.printerName,
+          dummy,
+        );
       } catch (e) {
         Log.shared.error("Model._constructor", "Starting Scan", [e]);
       }
@@ -196,7 +218,7 @@ class _PrinterSettingsState extends State<PrinterSettings> {
     print("Printer Width :t ${value}");
   }
 
-  void setBarcode(int newValue){
+  void setBarcode(int newValue) {
     setState(() {
       model.barcode = newValue - 1;
     });
@@ -206,7 +228,7 @@ class _PrinterSettingsState extends State<PrinterSettings> {
     print("New Barcode :t ${newValue - 1}");
   }
 
-  void setMargin(int newValue){
+  void setMargin(int newValue) {
     setState(() {
       model.leftMargin = newValue;
     });
@@ -216,59 +238,60 @@ class _PrinterSettingsState extends State<PrinterSettings> {
     print("New Margin : ${newValue}");
   }
 
-
-
   Widget build(BuildContext context) {
-    return Wrap(runSpacing: 20.0, children: [
-      labeledSegmentsFromText(model.tr.localize("Printing"),
-          ["No", "Label 1", "Label 2", "User"], model.printing, setPrinting),
-
-      labeled1PopupField(
-        model.tr.localize("Left Margin"),
-        model.leftMargin,
-        margins,
-        setMargin,
-      ),
-
-      labeledStringPopupField(
-        model.tr.localize("Barcode Type"),
-        model.barcode+1,
-        barcodes,
-        setBarcode,
-
-      ),
-      TextField(
-          onChanged: setPrinterName,
-          controller: TextEditingController(text: model.printerName),
-          decoration: InputDecoration(
-            border: OutlineInputBorder(),
-            labelText: model.tr.localize("Printer Name"),
-          )),
-      labeled1PopupField(
-    model.tr.localize("Printer Width"), widthIndex(), printerWidths, setWidth),
-      labeled1PopupField(
-    model.tr.localize("Serial Printer Speed"), speedIndex(), printerSpeeds, setSpeed),
-      labeledSegmentsFromText(model.tr.localize("Protocol"), ["ESC", "CPCL"],
-          model.printerType == 'ESC' ? 0 : 1, setPrinterType),
-      Row(children: [
-        Container(
-          width: screenWidth(context) -
-              ((screenWidth(context) > screenHeight(context)) ? 270 : 90),
-          child: TextField(
-              controller: controller,
-              enabled: false,
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: model.tr.localize('Current Label'),
-              )),
+    return Stack(alignment: Alignment.topCenter, children: [
+      Wrap(runSpacing: 20.0, children: [
+        labeledSegmentsFromText(model.tr.localize("Printing"),
+            ["No", "Label 1", "Label 2", "User"], model.printing, setPrinting),
+        labeled1PopupField(
+          model.tr.localize("Left Margin"),
+          model.leftMargin,
+          margins,
+          setMargin,
         ),
-        Spacer(),
-        IconButton(icon: Icon(Icons.adjust), onPressed: selectLabel),
-      ]),
-      Row(children: [
-        Spacer(),
-        TextButton(onPressed: importLabel, child: Text(model.tr.localize('Import Label'))),
-        Spacer(),
+        labeledStringPopupField(
+          model.tr.localize("Barcode Type"),
+          model.barcode + 1,
+          barcodes,
+          setBarcode,
+        ),
+        TextField(
+            onChanged: setPrinterName,
+            controller: TextEditingController(text: model.printerName),
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+              labelText: model.tr.localize("Printer Name"),
+            )),
+        labeled1PopupField(model.tr.localize("Printer Width"), widthIndex(),
+            printerWidths, setWidth),
+        labeled1PopupField(model.tr.localize("Serial Printer Speed"),
+            speedIndex(), printerSpeeds, setSpeed),
+        labeledSegmentsFromText(model.tr.localize("Protocol"), ["ESC", "CPCL"],
+            model.printerType == 'ESC' ? 0 : 1, setPrinterType),
+        Row(children: [
+          Container(
+            width: screenWidth(context) -
+                ((screenWidth(context) > screenHeight(context)) ? 270 : 90),
+            child: InputDecorator(
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+              labelText: model.tr.localize('Current Label'),
+              ),
+              child:  Text( model.labelName ),
+            ),
+
+          ),
+          Spacer(),
+          IconButton(
+              icon: Icon(Icons.adjust), onPressed: widget.openLabelSelector),
+        ]),
+        Row(children: [
+          Spacer(),
+          TextButton(
+              onPressed: importLabel,
+              child: Text(model.tr.localize('Import Label'))),
+          Spacer(),
+        ]),
       ]),
     ]);
   }

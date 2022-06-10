@@ -331,6 +331,7 @@ class GRAMModel {
   int counter = 0;
 
 
+
   // Anti Tamper
 
   String apkHash = "Calculating";
@@ -828,6 +829,7 @@ class GRAMModel {
     {
       await printLabel2(aprinter, newRecord);
     }else if (printing == 3 && (scannerEnabled || disableRestrictions) &&  label != null){ // Print defined label
+      await label.load(labelName);
       await label.printLabel(aprinter, record: newRecord, printerWidth: printerWidth);
     }
 

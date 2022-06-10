@@ -22,6 +22,14 @@ import 'LabeledSlider.dart';
 import 'Dialogs.dart';
 import 'NetworkOptions.dart';
 import 'package:barcode_widget/barcode_widget.dart';
+import 'package:external_app_launcher/external_app_launcher.dart';
+import 'LabelSelector.dart';
+
+import 'package:path/path.dart' as pth;
+import 'package:permission_handler/permission_handler.dart';
+import 'LocalFileSystemUtilities.dart';
+import 'dart:io';
+import 'Label.dart';
 
 class SettingsScreen extends StatefulWidget {
   @override
@@ -37,6 +45,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
   String versionString = "xxx";
 
   double _initialZeroRange = 0.0;
+
+  bool labelSelector = false;
+  List<String> labels = [];
 
   @override
   void initState() {
@@ -66,6 +77,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       items.add(new SettingsItem(
           model.tr.localize("Advanced"), networkOptions, false));
     }
+    items.add(new SettingsItem(model.tr.localize("Design Label"), null, true));
     items.add(new SettingsItem(model.tr.localize("About App"), about, true));
 
     rightItem = items.last;
@@ -97,9 +109,18 @@ class _SettingsScreenState extends State<SettingsScreen> {
   }
 
   void selectItem(SettingsItem e) {
-    setState(() {
-      rightItem = e;
-    });
+    if (e.detail == null){
+
+      LaunchApp.openApp(
+        androidPackageName: "es.gorina.designer",
+        openStore: false
+      );
+
+    }else {
+        setState(() {
+          rightItem = e;
+        });
+    }
   }
 
   Widget leftWidget() {
@@ -150,7 +171,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
               Padding(
                 padding: EdgeInsets.only(
                     left: 8.0, top: 10.0, right: 08.0, bottom: 10.0),
-                child: Scrollbar(
+                child:
+      Stack(
+      alignment: Alignment.topCenter,
+      children: [
+
+                Scrollbar(
                   isAlwaysShown: true,
                   child: Container(
                     width: screenWidth(context) - 220,
@@ -160,6 +186,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         controller: ScrollController()),
                   ),
                 ),
+
+            buildLabelSelector(),
+      ],),
               ),
             ]),
       ]);
@@ -526,7 +555,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   }
 
   Widget printerSettings(BuildContext context) {
-    return PrinterSettings();
+    return PrinterSettings(openLabelSelector);
   }
 
   Widget databaseSettings(BuildContext context) {
@@ -538,6 +567,89 @@ class _SettingsScreenState extends State<SettingsScreen> {
   Widget scaleDefinition(BuildContext context) {
     return ScaleDefinition();
   }
+
+
+  /* Label Management and selector */
+  Future<void> getLabels() async{
+
+    var status = await Permission.storage.request();
+    var path = await labelPath();
+
+
+    labels = await getFiles(path, directories: true, files: true);
+
+  }
+
+  void openLabelSelector(){
+    selectLabel();
+  }
+  void selectLabel() async{
+
+    await getLabels();
+    labelSelector = true;
+
+    setState((){
+
+    });
+
+  }
+
+
+
+  Widget buildLabelSelector() {
+    if (!labelSelector || labels == null) {
+      return SizedBox.shrink();
+    }
+    return Center(child: LabelSelector(labels, doSelectLabel, closeLabelSelector, doDeleteLabel));
+
+  }
+
+  void doSelectLabel(String path) {
+
+    closeLabelSelector();
+
+    var name = pth.basename(path);
+    model.labelName = name;
+    model.label = Label();
+    model.label.load(name);
+    model.saveDefaults();
+
+    setState(() {
+
+    });
+  }
+
+  void doDeleteLabel(String path){
+    deleteLabel(path);
+    setState((){
+      labels.remove(path);
+    });
+
+    print("Deleting $path");
+  }
+
+  Future<void> deleteLabel(String path) async{
+    var status = await Permission.storage.request();
+
+    Directory dir = Directory(path);
+
+    dir.delete(recursive: true);
+
+  }
+
+
+  void closeLabelSelector(){
+
+    labelSelector = false;
+    setState(() {
+
+    });
+
+  }
+
+  /* End of label management */
+
+
 
   /* About */
 
@@ -554,6 +666,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       setState(() {});
     });
   }
+
 
   Widget about(BuildContext context) {
     GRAMModel model = GRAMModel.shared;

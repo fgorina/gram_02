@@ -68,6 +68,7 @@ Widget labeledTextField(String name, String value, Function(String) changed, {bo
   );
 }
 
+
 Widget labeled2TextField(String name, String value1, String value2,
     Function(String) changed1, Function(String) changed2, {bool enabled = true}) {
   return Row(

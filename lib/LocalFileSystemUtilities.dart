@@ -113,3 +113,22 @@ Future<void> writeContent(name, data ) async {
   }
 }
 
+Future<List<String>> getFiles(String path,{ bool directories: true, bool files: true}) async{
+
+  print("Getting files for $path");
+
+  List<String> listFiles = [];
+  Directory dir = Directory(path);
+
+  dir.listSync().forEach((element) {
+    String pth = element.path;
+    if (directories && FileSystemEntity.isDirectorySync(pth)){
+      listFiles.add(pth);
+    }else if(files && FileSystemEntity.isFileSync(pth)){
+      listFiles.add(pth);
+    }
+  });
+
+  print("Found $listFiles");
+  return (listFiles);
+}
