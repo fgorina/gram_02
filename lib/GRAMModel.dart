@@ -330,8 +330,6 @@ class GRAMModel {
 
   int counter = 0;
 
-
-
   // Anti Tamper
 
   String apkHash = "Calculating";
@@ -346,8 +344,7 @@ class GRAMModel {
    }
 
   void initModel() async {
-     await getAndShowDeviceData();
-
+    await getAndShowDeviceData();
     // Mirar de modificar la ScaleDatabase en cas que tan sols tingui el Config
 
     scalesDatabase.initDatabase();

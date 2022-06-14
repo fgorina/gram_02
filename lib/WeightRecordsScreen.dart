@@ -12,6 +12,7 @@ import 'LicenseView.dart';
 import 'LocalFileSystemUtilities.dart';
 import 'package:intl/intl.dart';
 import 'package:permission_handler/permission_handler.dart';
+import 'package:external_app_launcher/external_app_launcher.dart';
 
 class WeightRecordsScreen extends StatefulWidget {
   _WeightRecordsState createState() => _WeightRecordsState();
@@ -88,6 +89,13 @@ class _WeightRecordsState extends State<WeightRecordsScreen> {
 
 
       var f = await model.doSaveCSVRecords(path);
+
+      LaunchApp.openApp(
+          androidPackageName: "com.android.documentsui",
+          openStore: false
+      );
+
+
     } else {
 
       displayOptionsAlert(context, "Export not implemented",  "Please, contact your dealer.", "Enter License",
